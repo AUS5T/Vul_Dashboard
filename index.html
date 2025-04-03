@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEV Vulnerability Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Known Exploited Vulnerabilities</h1>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="Search by CVE ID or product..." />
+    <select id="severityFilter">
+      <option value="">All Severities</option>
+      <option value="CRITICAL">CRITICAL</option>
+      <option value="HIGH">HIGH</option>
+      <option value="MEDIUM">MEDIUM</option>
+      <option value="LOW">LOW</option>
+    </select>
+    <button onclick="exportToCSV()">Export CSV</button>
+  </div>
+
+  <table id="kevTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">CVE ID</th>
+        <th onclick="sortTable(1)">Product</th>
+        <th onclick="sortTable(2)">Severity</th>
+        <th onclick="sortTable(3)">CVSS</th>
+        <th onclick="sortTable(4)">Required Action</th>
+        <th onclick="sortTable(5)">Due Date</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
