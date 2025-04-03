@@ -619,8 +619,8 @@
     "requiredAction": "The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product.",
     "dueDate": "2025-02-27",
     "dateAdded": "2025-02-06",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://support.sophos.com/support/s/article/KBA-000007526 ; https://nvd.nist.gov/vuln/detail/CVE-2020-29574"
   },
   {
@@ -2191,8 +2191,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2024-08-05",
     "dateAdded": "2024-07-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "This vulnerability affects an open-source component, third-party library, or a protocol used by different products. For more information, please see: https://github.com/geoserver/geoserver/security/advisories/GHSA-6jj6-gm7p-fcvv, https://github.com/geotools/geotools/pull/4797 ;   https://nvd.nist.gov/vuln/detail/CVE-2024-36401"
   },
   {
@@ -3679,8 +3679,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2023-10-23",
     "dateAdded": "2023-10-02",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_27.html; https://nvd.nist.gov/vuln/detail/CVE-2023-5217"
   },
   {
@@ -4987,8 +4987,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-04-20",
     "dateAdded": "2023-03-30",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities;  https://nvd.nist.gov/vuln/detail/CVE-2022-38181"
   },
   {
@@ -5263,8 +5263,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-03-03",
     "dateAdded": "2023-02-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://forum.terra-master.com/en/viewtopic.php?t=3030;  https://nvd.nist.gov/vuln/detail/CVE-2022-24990"
   },
   {
@@ -5443,8 +5443,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-01-03",
     "dateAdded": "2022-12-13",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://www.veeam.com/kb4288;  https://nvd.nist.gov/vuln/detail/CVE-2022-26500"
   },
   {
@@ -5695,8 +5695,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-11-10",
     "dateAdded": "2022-10-20",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://wiki.zimbra.com/wiki/Security_Center;  https://nvd.nist.gov/vuln/detail/CVE-2022-41352"
   },
   {
@@ -5947,8 +5947,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-09-29",
     "dateAdded": "2022-09-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://www.coresecurity.com/core-labs/advisories/mikrotik-routeros-smb-buffer-overflow#vendor_update, https://mikrotik.com/download; https://nvd.nist.gov/vuln/detail/CVE-2018-7445"
   },
   {
@@ -6127,8 +6127,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-09-15",
     "dateAdded": "2022-08-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://github.com/pear/Archive_Tar/commit/cde460582ff389404b5b3ccb59374e9b389de916, https://www.drupal.org/sa-core-2021-001, https://access.redhat.com/security/cve/cve-2020-36193; https://nvd.nist.gov/vuln/detail/CVE-2020-36193"
   },
   {
@@ -6367,8 +6367,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-18",
     "dateAdded": "2022-06-27",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-4034"
   },
   {
@@ -6691,8 +6691,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.1,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2012-4969"
   },
   {
@@ -6835,8 +6835,8 @@
     "requiredAction": "For Adobe Acrobat and Reader, apply updates per vendor instructions. For Adobe Flash Player, the impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-1862"
   },
   {
@@ -7903,8 +7903,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-25",
     "dateAdded": "2022-05-04",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-0160"
   },
   {
@@ -7915,8 +7915,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-16",
     "dateAdded": "2022-04-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2022-29464"
   },
   {
@@ -8371,8 +8371,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-27",
     "dateAdded": "2022-04-06",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-3156"
   },
   {
@@ -8443,8 +8443,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-04-25",
     "dateAdded": "2022-04-04",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-45382"
   },
   {
@@ -8527,8 +8527,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-04-21",
     "dateAdded": "2022-03-31",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-10561"
   },
   {
@@ -8815,8 +8815,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2013-2551"
   },
   {
@@ -8911,8 +8911,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-21",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2010-4398"
   },
   {
@@ -8959,8 +8959,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-42237"
   },
   {
@@ -9007,8 +9007,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-7247"
   },
   {
@@ -9115,8 +9115,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-16920"
   },
   {
@@ -9559,8 +9559,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-0130"
   },
   {
@@ -10999,8 +10999,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2012-1535"
   },
   {
@@ -11167,8 +11167,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-11",
     "dateAdded": "2022-02-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 6.1,
+    "cvssSeverity": "MEDIUM",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2022-24682"
   },
   {
@@ -11743,8 +11743,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-02-01",
     "dateAdded": "2022-01-18",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-40870"
   },
   {
@@ -12235,8 +12235,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-12-15",
     "dateAdded": "2021-12-01",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-37415"
   },
   {
@@ -12343,8 +12343,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-11-17",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-27101"
   },
   {
@@ -12523,8 +12523,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-4437"
   },
   {
@@ -12883,8 +12883,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-11-17",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-28664"
   },
   {
@@ -13147,8 +13147,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-19781"
   },
   {
@@ -13723,8 +13723,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-15505"
   },
   {
@@ -14995,8 +14995,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-04-23",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 10.0,
+    "cvssSeverity": "CRITICAL",
     "notes": "Reference CISA's ED 21-03 (https://www.cisa.gov/news-events/directives/ed-21-03-mitigate-pulse-connect-secure-product-vulnerabilities) for further guidance and requirements. Note: The due date for addressing this vulnerability aligns with the requirements outlined in ED 21-03. https://nvd.nist.gov/vuln/detail/CVE-2019-11510"
   },
   {
@@ -15007,8 +15007,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.2,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-11539"
   },
   {
@@ -15055,8 +15055,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-11-17",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-35395"
   },
   {
@@ -15079,8 +15079,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 6.5,
+    "cvssSeverity": "MEDIUM",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-11652"
   },
   {
@@ -15091,8 +15091,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-11651"
   },
   {
@@ -15187,8 +15187,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-16256"
   },
   {
@@ -15307,8 +15307,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-12271"
   },
   {
@@ -15319,8 +15319,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-10181"
   },
   {
@@ -15367,8 +15367,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-11-17",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-31755"
   },
   {
@@ -15511,8 +15511,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-20085"
   },
   {
@@ -15715,8 +15715,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2021-11-17",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-40539"
   },
   {
@@ -15751,8 +15751,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-29583"
   }
 ]
