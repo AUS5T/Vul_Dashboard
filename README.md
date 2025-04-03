@@ -32,7 +32,7 @@ This dashboard visualizes the latest **Known Exploited Vulnerabilities (KEVs)** 
 > 💡 If this repo is private, clone it and open `index.html` locally in your browser.  
 > Once public and GitHub Pages is enabled, you’ll be able to visit:
 
-https://YOUR_USERNAME.github.io/Vul_Dashboard/
+https://AUS5T.github.io/Vul_Dashboard/
 
 
 ---
