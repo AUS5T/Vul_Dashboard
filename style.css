@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --table-bg: #f9f9f9;
+  --table-border: #ccc;
+}
+
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f1f1f1;
+  --table-bg: #2a2a2a;
+  --table-border: #444;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--table-bg);
+}
+
+th, td {
+  border: 1px solid var(--table-border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  cursor: pointer;
+  background-color: var(--table-border);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
