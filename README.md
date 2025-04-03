@@ -3,7 +3,7 @@
 
 This dashboard visualizes the latest **Known Exploited Vulnerabilities (KEVs)** curated by [CISA](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), enriched with CVSS scores from the [NVD](https://nvd.nist.gov/).
 
-![Dashboard Preview](screenshot.png) <!-- optional: add a screenshot -->
+![Dashboard Preview](assets/images/dashscreen.jpg) <!-- optional: add a screenshot -->
 
 ---
 
