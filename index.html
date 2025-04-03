@@ -41,6 +41,23 @@
     <tbody></tbody>
   </table>
 
+  <!-- Last Updated Section -->
+  <div id="last-updated">
+    Last updated on: <span id="timestamp"></span>
+  </div>
+
+  <!-- JavaScript to load the last updated timestamp -->
+  <script>
+    fetch('last_updated.txt')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the timestamp into the span with id 'timestamp'
+            document.getElementById('timestamp').innerText = data.trim();
+        })
+        .catch(err => console.error('Error loading last updated timestamp:', err));
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>
+
