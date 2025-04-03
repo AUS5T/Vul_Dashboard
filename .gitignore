@@ -1,0 +1,23 @@
+# Prevent secrets from being committed
+.env
+*.env
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets.*
+config.json
+
+# Prevent local or system files
+.DS_Store
+Thumbs.db
+
+# Optional: text editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Node or Python dependencies (if ever added)
+node_modules/
+__pycache__/
