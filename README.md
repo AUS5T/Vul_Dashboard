@@ -20,7 +20,7 @@ This dashboard visualizes the latest **Known Exploited Vulnerabilities (KEVs)** 
 ###  How It Works
 
 - This dashboard is automatically updated via GitHub Actions
-- The `kev_enriched.json` file is pushed from the [`vul-feed-gen`](https://github.com/YOUR_USERNAME/vul-feed-gen) repo
+- The `kev_enriched.json` file is pushed from a separate source
 - All data is pulled from:
   - [CISA KEV Feed (JSON)](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json)
   - [NVD JSON Modified Feed](https://nvd.nist.gov/vuln/data-feeds)
