@@ -97,3 +97,22 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(20px);
 }
+
+/* New Description Section Style */
+.description {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.description p:first-child {
+  font-weight: bold;
+}
