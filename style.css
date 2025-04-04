@@ -98,6 +98,23 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
+/* Dark mode icon styling */
+.dark-mode-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* Space between icon and toggle switch */
+}
+
+.dark-mode-switch i {
+  font-size: 20px;  /* Set icon size */
+  color: var(--text);  /* Icon color matches the text color */
+  transition: color 0.3s;  /* Smooth transition when switching modes */
+}
+
+body.dark .dark-mode-switch i {
+  color: var(--bg);  /* Icon color changes in dark mode */
+}
+
 /* New Description Section Style */
 .description {
   padding: 20px;
