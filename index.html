@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vulnerabilities Dashboard</title>
+  <title>KEV Vulnerability Dashboard</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Add Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
   <div class="header">
     <h1>Known Exploited Vulnerabilities</h1>
-    <label class="switch">
-      <input type="checkbox" id="darkModeToggle">
-      <span class="slider"></span>
-    </label>
+    
+    <!-- Add the icon next to the dark mode toggle -->
+    <div class="dark-mode-switch">
+      <i class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
   </div>
 
   <!-- Short Description Section -->
@@ -71,4 +79,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
