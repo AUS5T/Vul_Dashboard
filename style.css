@@ -112,7 +112,7 @@ input:checked + .slider:before {
 }
 
 body.dark .dark-mode-switch i {
-  color: var(--bg);  /* Icon color changes in dark mode */
+  color: yellow;  /* Icon color changes to yellow in dark mode */
 }
 
 /* New Description Section Style */
