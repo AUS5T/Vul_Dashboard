@@ -21,8 +21,8 @@ body.dark {
 }
 
 .logo {
-  width: 300px;  /* Increase size */
-  height: 300px;  /* Increase size */
+  width: 250px;  
+  height: 250px;  
   object-fit: contain;
   margin-right: 10px;
 }
@@ -38,6 +38,7 @@ body.dark {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  align-items: center; /* Ensures the items are vertically centered */
 }
 
 input, select, button {
