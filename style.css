@@ -21,17 +21,17 @@ body.dark {
 }
 
 .logo {
-  height: 300px;   /* Set the height to 30px */
-  width: 300px;    /* Keep the aspect ratio intact */
-  max-width: 300px;  /* Limit the maximum width to 50px */
-  margin-right: 10px;  /* Space between logo and title */
+  width: 300px;  /* Increase size */
+  height: 300px;  /* Increase size */
+  object-fit: contain;
+  margin-right: 10px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 10px;
 }
 
 .controls {
