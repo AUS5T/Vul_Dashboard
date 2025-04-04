@@ -66,6 +66,8 @@ body.dark {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  width: 100%; /* Make the controls span the full width of the page */
+  justify-content: space-between; /* Distribute space between items (like buttons and dark mode) */
   align-items: center; /* Ensures the items are vertically centered */
 }
 
