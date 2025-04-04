@@ -98,6 +98,11 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
+.logo {
+  width: 150px;  /* Adjust this value as needed */
+  height: auto;  /* Maintains the aspect ratio */
+}
+
 /* Dark mode icon styling */
 .dark-mode-switch {
   display: flex;
