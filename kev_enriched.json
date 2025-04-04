@@ -5467,8 +5467,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-01-03",
     "dateAdded": "2022-12-13",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://www.veeam.com/kb4288;  https://nvd.nist.gov/vuln/detail/CVE-2022-26501"
   },
   {
@@ -7603,8 +7603,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 6.4,
+    "cvssSeverity": "MEDIUM",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-0920"
   },
   {
