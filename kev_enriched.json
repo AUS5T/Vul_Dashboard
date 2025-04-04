@@ -43,8 +43,8 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-04-16",
     "dateAdded": "2025-03-26",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://support.sitecore.com/kb?id=kb_article_view&sysparm_article=KB0038556 ; https://nvd.nist.gov/vuln/detail/CVE-2019-9875"
   },
   {
@@ -55,8 +55,8 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-04-16",
     "dateAdded": "2025-03-26",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://support.sitecore.com/kb?id=kb_article_view&sysparm_article=KB0334035 ; https://nvd.nist.gov/vuln/detail/CVE-2019-9874"
   },
   {
@@ -2731,8 +2731,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2024-03-26",
     "dateAdded": "2024-03-05",
-    "cvssScore": 5.5,
-    "cvssSeverity": "MEDIUM",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://source.android.com/docs/security/bulletin/pixel/2023-06-01;  https://nvd.nist.gov/vuln/detail/CVE-2023-21237"
   },
   {
@@ -3775,8 +3775,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2023-10-09",
     "dateAdded": "2023-09-18",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://web.archive.org/web/20150831100501/http://securityadvisories.dlink.com/security/publication.aspx?name=SAP10055; https://nvd.nist.gov/vuln/detail/CVE-2014-8361"
   },
   {
@@ -4195,8 +4195,8 @@
     "requiredAction": "Apply updates per vendor instructions or discontinue use of the product if updates are unavailable.",
     "dueDate": "2023-07-28",
     "dateAdded": "2023-07-07",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities; https://nvd.nist.gov/vuln/detail/CVE-2021-29256"
   },
   {
@@ -6787,8 +6787,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2010-2572"
   },
   {
@@ -7087,8 +7087,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-15",
     "dateAdded": "2022-05-25",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-6175"
   },
   {
@@ -8227,8 +8227,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-04",
     "dateAdded": "2022-04-13",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-2502"
   },
   {
@@ -8515,8 +8515,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-04-21",
     "dateAdded": "2022-03-31",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-10562"
   },
   {
@@ -10819,8 +10819,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-1701"
   },
   {
@@ -11875,8 +11875,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-10",
     "dateAdded": "2022-01-10",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-6572"
   },
   {
@@ -13879,8 +13879,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-0185"
   },
   {
@@ -14347,8 +14347,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-0798"
   },
   {
@@ -14359,8 +14359,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-0802"
   },
   {
