@@ -21,9 +21,9 @@ body.dark {
 }
 
 .logo {
-  height: 200px;   /* Set the height to 30px */
-  width: auto;    /* Keep the aspect ratio intact */
-  max-width: 200px;  /* Limit the maximum width to 50px */
+  height: 300px;   /* Set the height to 30px */
+  width: 300px;    /* Keep the aspect ratio intact */
+  max-width: 300px;  /* Limit the maximum width to 50px */
   margin-right: 10px;  /* Space between logo and title */
 }
 
