@@ -56,9 +56,10 @@ body.dark {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 10px;  /* Space between the logo and the title */
   width: 100%;
 }
 
@@ -201,7 +202,6 @@ body.dark {
   width: 200px;  
   height: auto;  
   object-fit: contain;
-  margin-right: 10px;
 }
 
 .header {
