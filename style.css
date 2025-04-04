@@ -41,6 +41,10 @@ body.dark {
   align-items: center; /* Ensures the items are vertically centered */
 }
 
+.controls .dark-mode-switch {
+  margin-left: 4rem;  /* Adds space between the CSV export button and the dark mode switch */
+}
+
 input, select, button {
   padding: 0.5rem;
   font-size: 1rem;
