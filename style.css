@@ -22,7 +22,34 @@ body.dark {
 
 .logo {
   width: 200px;  
-  height: 200px;  
+  height: auto;  
+  object-fit: contain;
+  margin-right: 10px;
+}body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --table-bg: #f9f9f9;
+  --table-border: #ccc;
+}
+
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f1f1f1;
+  --table-bg: #2a2a2a;
+  --table-border: #444;
+}
+
+.logo {
+  width: 200px;  
+  height: auto;  
   object-fit: contain;
   margin-right: 10px;
 }
@@ -32,6 +59,155 @@ body.dark {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center; /* Ensures the items are vertically centered */
+}
+
+.controls .dark-mode-switch {
+  margin-left: 4rem;  /* Adds space between the CSV export button and the dark mode switch */
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--table-bg);
+}
+
+th, td {
+  border: 1px solid var(--table-border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  cursor: pointer;
+  background-color: var(--table-border);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Dark mode icon styling */
+.dark-mode-switch {
+  display: flex;
+  align-items: right;
+  gap: 10px;  /* Space between icon and toggle switch */
+}
+
+.dark-mode-switch i {
+  font-size: 20px;  /* Set icon size */
+  color: var(--text);  /* Icon color matches the text color */
+  transition: color 0.3s;  /* Smooth transition when switching modes */
+}
+
+body.dark .dark-mode-switch i {
+  color: yellow;  /* Icon color changes to yellow in dark mode */
+}
+
+/* New Description Section Style */
+.description {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.description p:first-child {
+  font-weight: bold;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --table-bg: #f9f9f9;
+  --table-border: #ccc;
+}
+
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f1f1f1;
+  --table-bg: #2a2a2a;
+  --table-border: #444;
+}
+
+.logo {
+  width: 200px;  
+  height: auto;  
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .controls {
@@ -114,6 +290,128 @@ input:checked + .slider:before {
 .dark-mode-switch {
   display: flex;
   align-items: center;
+  gap: 10px;  /* Space between icon and toggle switch */
+  margin-left: auto;  /* This ensures the dark mode switch is pushed to the right */
+}
+
+.dark-mode-switch i {
+  font-size: 20px;  /* Set icon size */
+  color: var(--text);  /* Icon color matches the text color */
+  transition: color 0.3s;  /* Smooth transition when switching modes */
+}
+
+body.dark .dark-mode-switch i {
+  color: yellow;  /* Icon color changes to yellow in dark mode */
+}
+
+/* New Description Section Style */
+.description {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.description p:first-child {
+  font-weight: bold;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center; /* Ensures the items are vertically centered */
+}
+
+.controls .dark-mode-switch {
+  margin-left: 4rem;  /* Adds space between the CSV export button and the dark mode switch */
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--table-bg);
+}
+
+th, td {
+  border: 1px solid var(--table-border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  cursor: pointer;
+  background-color: var(--table-border);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Dark mode icon styling */
+.dark-mode-switch {
+  display: flex;
+  align-items: right;
   gap: 10px;  /* Space between icon and toggle switch */
 }
 
