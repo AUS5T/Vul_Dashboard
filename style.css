@@ -20,6 +20,13 @@ body.dark {
   --table-border: #444;
 }
 
+.logo {
+  height: 30px;   /* Set the height to 30px */
+  width: auto;    /* Keep the aspect ratio intact */
+  max-width: 50px;  /* Limit the maximum width to 50px */
+  margin-right: 10px;  /* Space between logo and title */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -96,12 +103,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
-}
-
-.logo {
-  height: 40px;  /* Adjust this value to control the size */
-  width: auto;  /* Maintain aspect ratio */
-  margin-right: 10px;  /* Space between logo and title */
 }
 
 /* Dark mode icon styling */
