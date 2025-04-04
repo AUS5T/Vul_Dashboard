@@ -9,7 +9,7 @@ This dashboard visualizes the latest **Known Exploited Vulnerabilities (KEVs)** 
 
 ###  Features
 
-- Updated KEV data on 5 minute intervals (`kev_enriched.json`)
+- Updated KEV data on 10 minute intervals (`kev_enriched.json`)
 - Sortable, filterable table (by CVSS, vendor, due date, etc.)
 - Searchable by CVE ID or product name
 - Dark mode toggle 
