@@ -607,8 +607,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-02-27",
     "dateAdded": "2025-02-06",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://community.sophos.com/b/security-blog/posts/advisory-buffer-overflow-vulnerability-in-user-portal ; https://nvd.nist.gov/vuln/detail/CVE-2020-15069"
   },
   {
@@ -799,8 +799,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-02-04",
     "dateAdded": "2025-01-14",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-21333 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21333"
   },
   {
@@ -1291,8 +1291,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2024-11-28",
     "dateAdded": "2024-11-07",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://cyberpanel.net/blog/detials-and-fix-of-recent-security-issue-and-patch-of-cyberpanel ; https://nvd.nist.gov/vuln/detail/CVE-2024-51567"
   },
   {
@@ -3535,8 +3535,8 @@
     "requiredAction": "Verify that instances of Cisco IOS XE Web UI are in compliance with BOD 23-02 and apply mitigations per vendor instructions. For affected products (Cisco IOS XE Web UI exposed to the internet or to untrusted networks), follow vendor instructions to determine if a system may have been compromised and immediately report positive findings to CISA.",
     "dueDate": "2023-10-20",
     "dateAdded": "2023-10-16",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 10.0,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-xe-dublin-17121/221128-software-fix-availability-for-cisco-ios.html;  https://nvd.nist.gov/vuln/detail/CVE-2023-20198"
   },
   {
@@ -3595,8 +3595,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2023-10-31",
     "dateAdded": "2023-10-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on patching status.   For more information, please see: https://blog.cloudflare.com/technical-breakdown-http2-rapid-reset-ddos-attack/ ; https://nvd.nist.gov/vuln/detail/CVE-2023-44487"
   },
   {
@@ -4207,8 +4207,8 @@
     "requiredAction": "Apply updates per vendor instructions or discontinue use of the product if updates are unavailable.",
     "dueDate": "2023-07-20",
     "dateAdded": "2023-06-29",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10147; https://nvd.nist.gov/vuln/detail/CVE-2019-17621"
   },
   {
@@ -4903,8 +4903,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-04-28",
     "dateAdded": "2023-04-07",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 3.3,
+    "cvssSeverity": "LOW",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities;  https://nvd.nist.gov/vuln/detail/CVE-2023-26083"
   },
   {
@@ -4975,8 +4975,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-04-20",
     "dateAdded": "2023-03-30",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://support.apple.com/en-us/HT21286, https://support.apple.com/en-us/HT212868, https://support.apple.com/kb/HT212872; https://nvd.nist.gov/vuln/detail/CVE-2021-30900"
   },
   {
@@ -5251,8 +5251,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-03-03",
     "dateAdded": "2023-02-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00051.html; https://nvd.nist.gov/vuln/detail/CVE-2015-2291"
   },
   {
@@ -5743,8 +5743,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-10-21",
     "dateAdded": "2022-09-30",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.0,
+    "cvssSeverity": "HIGH",
     "notes": "https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/;  https://nvd.nist.gov/vuln/detail/CVE-2022-41082"
   },
   {
@@ -5839,8 +5839,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-10-06",
     "dateAdded": "2022-09-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=fc9bbca8f650e5f738af8806317c0a041a48ae4a; https://nvd.nist.gov/vuln/detail/CVE-2013-2596"
   },
   {
@@ -5959,8 +5959,8 @@
     "requiredAction": "The vendor D-Link published an advisory stating the fix under CVE-2018-20114 properly patches KEV entry CVE-2018-6530. If the device is still supported, apply updates per vendor instructions. If the affected device has since entered its end-of-life, it should be disconnected if still in use.",
     "dueDate": "2022-09-29",
     "dateAdded": "2022-09-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10105; https://nvd.nist.gov/vuln/detail/CVE-2018-6530"
   },
   {
@@ -6235,8 +6235,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-09-08",
     "dateAdded": "2022-08-18",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://security.paloaltonetworks.com/CVE-2017-15944; https://nvd.nist.gov/vuln/detail/CVE-2017-15944"
   },
   {
@@ -7699,8 +7699,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0880"
   },
   {
@@ -7723,8 +7723,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-11707"
   },
   {
@@ -7783,8 +7783,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1130"
   },
   {
@@ -8131,8 +8131,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-06",
     "dateAdded": "2022-04-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2007-3010"
   },
   {
@@ -8767,8 +8767,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-2419"
   },
   {
@@ -8791,8 +8791,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2013-3660"
   },
   {
@@ -9031,8 +9031,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-25223"
   },
   {
@@ -9199,8 +9199,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0903"
   },
   {
@@ -9463,8 +9463,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-3035"
   },
   {
@@ -9487,8 +9487,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-1187"
   },
   {
@@ -9763,8 +9763,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1253"
   },
   {
@@ -9775,8 +9775,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1132"
   },
   {
@@ -9787,8 +9787,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1129"
   },
   {
@@ -9811,8 +9811,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1064"
   },
   {
@@ -11311,8 +11311,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-08-15",
     "dateAdded": "2022-02-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2017-9841"
   },
   {
@@ -11635,8 +11635,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-28",
     "dateAdded": "2022-01-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-7169"
   },
   {
@@ -11923,8 +11923,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-10",
     "dateAdded": "2022-01-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-9670"
   },
   {
@@ -12067,8 +12067,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-10",
     "dateAdded": "2021-12-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-13272"
   },
   {
@@ -12199,8 +12199,8 @@
     "requiredAction": "For all affected software assets for which updates exist, the only acceptable remediation actions are: 1) Apply updates; OR 2) remove affected assets from agency networks. Temporary mitigations using one of the measures provided at https://www.cisa.gov/uscert/ed-22-02-apache-log4j-recommended-mitigation-measures are only acceptable until updates are available.",
     "dueDate": "2021-12-24",
     "dateAdded": "2021-12-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 10.0,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
   },
   {
@@ -14335,8 +14335,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1215"
   },
   {
@@ -14707,8 +14707,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0863"
   },
   {
@@ -14803,8 +14803,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-19356"
   },
   {
@@ -15139,8 +15139,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 6.5,
+    "cvssSeverity": "MEDIUM",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-9563"
   },
   {
