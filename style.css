@@ -99,8 +99,9 @@ input:checked + .slider:before {
 }
 
 .logo {
-  width: 150px;  /* Adjust this value as needed */
-  height: auto;  /* Maintains the aspect ratio */
+  height: 40px;  /* Adjust this value to control the size */
+  width: auto;  /* Maintain aspect ratio */
+  margin-right: 10px;  /* Space between logo and title */
 }
 
 /* Dark mode icon styling */
