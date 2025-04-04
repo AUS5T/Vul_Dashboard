@@ -48,10 +48,10 @@ body.dark {
 }
 
 .logo {
-  width: 200px;  
+  width: 150px;  
   height: auto;  
   object-fit: contain;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header {
@@ -59,7 +59,7 @@ body.dark {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
-  gap: 10px;  /* Space between the logo and the title */
+  gap: 5px;  /* Space between the logo and the title */
   width: 100%;
 }
 
@@ -293,7 +293,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   gap: 10px;  /* Space between icon and toggle switch */
-  margin-left: auto;  /* This ensures the dark mode switch is pushed to the right */
+  justify-content: flex-end;
 }
 
 .dark-mode-switch i {
