@@ -21,46 +21,23 @@ body.dark {
 }
 
 .logo {
-  width: 200px;  
-  height: auto;  
-  object-fit: contain;
-  margin-right: 10px;
-}body {
-  font-family: Arial, sans-serif;
-  margin: 1rem;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-  --table-bg: #f9f9f9;
-  --table-border: #ccc;
-}
-
-body.dark {
-  --bg: #1f1f1f;
-  --text: #f1f1f1;
-  --table-bg: #2a2a2a;
-  --table-border: #444;
-}
-
-.logo {
   width: 150px;  
   height: auto;  
   object-fit: contain;
-  margin-right: 5px;
+  margin-right: 10px; /* Space between the logo and title */
 }
 
 .header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Ensure everything aligns to the left */
   align-items: center;
   margin-bottom: 1rem;
-  gap: 5px;  /* Space between the logo and the title */
+  gap: 10px; /* Space between logo and title */
   width: 100%;
+}
+
+h1 {
+  margin: 0; /* Remove the default margin from h1 to ensure proper alignment */
 }
 
 .controls {
