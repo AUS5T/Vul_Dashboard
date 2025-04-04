@@ -4939,8 +4939,8 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2023-04-20",
     "dateAdded": "2023-03-30",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2013/ms13-055; https://nvd.nist.gov/vuln/detail/CVE-2013-3163"
   },
   {
@@ -6751,8 +6751,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2012-0151"
   },
   {
@@ -6859,8 +6859,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-0563"
   },
   {
@@ -6871,8 +6871,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-0557"
   },
   {
@@ -7015,8 +7015,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-15",
     "dateAdded": "2022-05-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-0016"
   },
   {
@@ -7123,8 +7123,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-15",
     "dateAdded": "2022-05-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-4148"
   },
   {
@@ -7183,8 +7183,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-15",
     "dateAdded": "2022-05-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-4077"
   },
   {
@@ -7459,8 +7459,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-14",
     "dateAdded": "2022-05-24",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2017-8543"
   },
   {
@@ -7495,8 +7495,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-14",
     "dateAdded": "2022-05-24",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 6.5,
+    "cvssSeverity": "MEDIUM",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-3351"
   },
   {
@@ -8647,8 +8647,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-8406"
   },
   {
@@ -8695,8 +8695,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.1,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2017-0037"
   },
   {
@@ -8707,8 +8707,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-7201"
   },
   {
@@ -8719,8 +8719,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-18",
     "dateAdded": "2022-03-28",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-7200"
   },
   {
@@ -9223,8 +9223,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-8414"
   },
   {
@@ -9379,8 +9379,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-15",
     "dateAdded": "2022-03-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2017-0146"
   },
   {
@@ -9751,8 +9751,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1322"
   },
   {
@@ -9847,8 +9847,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0543"
   },
   {
@@ -9859,8 +9859,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.0,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-8120"
   },
   {
@@ -10171,8 +10171,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-17",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.4,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2018-8581"
   },
   {
@@ -10819,8 +10819,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-2387"
   },
   {
@@ -10879,8 +10879,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2013-5065"
   },
   {
@@ -10891,8 +10891,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2013-3897"
   },
   {
@@ -10987,8 +10987,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2012-1856"
   },
   {
@@ -11107,8 +11107,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-3129"
   },
   {
@@ -11119,8 +11119,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-1123"
   },
   {
@@ -11215,8 +11215,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-08-25",
     "dateAdded": "2022-02-25",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-6352"
   },
   {
@@ -11383,8 +11383,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-08-10",
     "dateAdded": "2022-02-10",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 10.0,
+    "cvssSeverity": "CRITICAL",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-0796"
   },
   {
@@ -13831,8 +13831,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-0167"
   },
   {
@@ -14131,8 +14131,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-7255"
   },
   {
@@ -14215,8 +14215,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0803"
   },
   {
@@ -14395,8 +14395,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2015-1641"
   },
   {
@@ -14587,8 +14587,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-1054"
   },
   {
@@ -14659,8 +14659,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-0808"
   },
   {
