@@ -3451,8 +3451,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or disable SLP service or port 427/UDP on all systems running on untrusted networks, including those directly connected to the Internet.",
     "dueDate": "2023-11-29",
     "dateAdded": "2023-11-08",
-    "cvssScore": 7.5,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on the patching status. For more information please see https://www.bitsight.com/blog/new-high-severity-vulnerability-cve-2023-29552-discovered-service-location-protocol-slp and https://www.cisa.gov/news-events/alerts/2023/04/25/abuse-service-location-protocol-may-lead-dos-attacks.;  https://nvd.nist.gov/vuln/detail/CVE-2023-29552"
   },
   {
@@ -4807,8 +4807,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-05-04",
     "dateAdded": "2023-04-13",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://source.android.com/docs/security/bulletin/2023-03-01;  https://nvd.nist.gov/vuln/detail/CVE-2023-20963"
   },
   {
@@ -5119,8 +5119,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-03-28",
     "dateAdded": "2023-03-07",
-    "cvssScore": 6.8,
-    "cvssSeverity": "MEDIUM",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://www.manageengine.com/products/self-service-password/advisory/CVE-2022-28810.html;  https://nvd.nist.gov/vuln/detail/CVE-2022-28810"
   },
   {
@@ -5791,8 +5791,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-10-14",
     "dateAdded": "2022-09-23",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://www.sophos.com/en-us/security-advisories/sophos-sa-20220923-sfos-rce;  https://nvd.nist.gov/vuln/detail/CVE-2022-3236"
   },
   {
@@ -5803,8 +5803,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-10-13",
     "dateAdded": "2022-09-22",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://www.manageengine.com/products/passwordmanagerpro/advisory/cve-2022-35405.html;  https://nvd.nist.gov/vuln/detail/CVE-2022-35405"
   },
   {
@@ -7759,8 +7759,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-8720"
   },
   {
@@ -8323,8 +8323,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-02",
     "dateAdded": "2022-04-11",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-39793"
   },
   {
