@@ -4,7 +4,7 @@
     "vendor": "Ivanti",
     "product": "Connect Secure, Policy Secure and ZTA Gateways",
     "vulnerabilityName": "Ivanti Connect Secure, Policy Secure and ZTA Gateways Stack-Based Buffer Overflow Vulnerability",
-    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "requiredAction": "Apply mitigations as set forth in the CISA instructions linked below.",
     "dueDate": "2025-04-11",
     "dateAdded": "2025-04-04",
     "cvssScore": "N/A",
