@@ -4207,8 +4207,8 @@
     "requiredAction": "Apply updates per vendor instructions or discontinue use of the product if updates are unavailable.",
     "dueDate": "2023-07-28",
     "dateAdded": "2023-07-07",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities; https://nvd.nist.gov/vuln/detail/CVE-2021-29256"
   },
   {
@@ -5035,8 +5035,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-04-20",
     "dateAdded": "2023-03-30",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities;  https://nvd.nist.gov/vuln/detail/CVE-2022-22706"
   },
   {
