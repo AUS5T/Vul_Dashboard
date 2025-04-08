@@ -1,5 +1,29 @@
 [
   {
+    "cveID": "CVE-2025-29824",
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "vulnerabilityName": "Microsoft Windows Common Log File System (CLFS) Driver Use-After-Free Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-04-29",
+    "dateAdded": "2025-04-08",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-29824 ; https://nvd.nist.gov/vuln/detail/CVE-2025-29824"
+  },
+  {
+    "cveID": "CVE-2025-30406",
+    "vendor": "Gladinet",
+    "product": "CentreStack",
+    "vulnerabilityName": "Gladinet CentreStack Use of Hard-coded Cryptographic Key Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-04-29",
+    "dateAdded": "2025-04-08",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "notes": "https://gladinetsupport.s3.us-east-1.amazonaws.com/gladinet/securityadvisory-cve-2005.pdf ; https://www.centrestack.com/p/gce_latest_release.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-30406"
+  },
+  {
     "cveID": "CVE-2025-31161",
     "vendor": "CrushFTP",
     "product": "CrushFTP",
@@ -7651,8 +7675,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-0638"
   },
   {
@@ -14455,8 +14479,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-03",
     "dateAdded": "2021-11-03",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 7.5,
+    "cvssSeverity": "HIGH",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-0674"
   },
   {
