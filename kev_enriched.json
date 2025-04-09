@@ -2119,8 +2119,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2024-08-26",
     "dateAdded": "2024-08-05",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2018-0824; https://nvd.nist.gov/vuln/detail/CVE-2018-0824"
   },
   {
@@ -6883,8 +6883,8 @@
     "requiredAction": "For Adobe Acrobat and Reader, apply updates per vendor instructions. For Adobe Flash Player, the impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-1862"
   },
   {
@@ -6895,8 +6895,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-0563"
   },
   {
@@ -6907,8 +6907,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-22",
     "dateAdded": "2022-06-08",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-0557"
   },
   {
@@ -8179,8 +8179,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-05-06",
     "dateAdded": "2022-04-15",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2007-3010"
   },
   {
@@ -9847,8 +9847,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-04-05",
     "dateAdded": "2022-03-15",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-1069"
   },
   {
@@ -11143,8 +11143,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-3129"
   },
   {
@@ -11155,8 +11155,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-03-24",
     "dateAdded": "2022-03-03",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-1123"
   },
   {
