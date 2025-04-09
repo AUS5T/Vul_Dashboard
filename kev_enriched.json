@@ -1,5 +1,29 @@
 [
   {
+    "cveID": "CVE-2024-53150",
+    "vendor": "Linux",
+    "product": "Kernel",
+    "vulnerabilityName": "Linux Kernel Out-of-Bounds Read Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-04-30",
+    "dateAdded": "2025-04-09",
+    "cvssScore": 7.1,
+    "cvssSeverity": "HIGH",
+    "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. For more information, please see: https://lore.kernel.org/linux-cve-announce/2024122427-CVE-2024-53150-3a7d@gregkh/ ; https://source.android.com/docs/security/bulletin/2025-04-01 ; https://nvd.nist.gov/vuln/detail/CVE-2024-53150"
+  },
+  {
+    "cveID": "CVE-2024-53197",
+    "vendor": "Linux",
+    "product": "Kernel",
+    "vulnerabilityName": "Linux Kernel Out-of-Bounds Access Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-04-30",
+    "dateAdded": "2025-04-09",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. For more information, please see: https://lore.kernel.org/linux-cve-announce/2024122725-CVE-2024-53197-6aef@gregkh/ ; https://source.android.com/docs/security/bulletin/2025-04-01 ; https://nvd.nist.gov/vuln/detail/CVE-2024-53197"
+  },
+  {
     "cveID": "CVE-2025-29824",
     "vendor": "Microsoft",
     "product": "Windows",
