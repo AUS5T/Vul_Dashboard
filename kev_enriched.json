@@ -441,8 +441,8 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-03-25",
     "dateAdded": "2025-03-04",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.2,
+    "cvssSeverity": "HIGH",
     "epssScore": 0.09716,
     "epssPercentile": 0.92201,
     "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25390 ; https://nvd.nist.gov/vuln/detail/CVE-2025-22225"
