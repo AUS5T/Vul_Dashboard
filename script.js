@@ -45,7 +45,7 @@ function renderTable() {
 
 document.getElementById("searchBox").addEventListener("input", e => {
   const search = e.target.value.toLowerCase();
-  const filtered = tableData.filter(item =>
+  const filtered = fullData.filter(item =>
     item.cveID.toLowerCase().includes(search) ||
     (item.product && item.product.toLowerCase().includes(search))
   );
@@ -57,7 +57,7 @@ document.getElementById("searchBox").addEventListener("input", e => {
 document.getElementById("severityFilter").addEventListener("change", e => {
   const value = e.target.value;
   const filtered = value
-    ? tableData.filter(item => item.cvssSeverity === value)
+    ? fullData.filter(item => item.cvssSeverity === value)
     : fullData; // We'll define this in a moment
   tableData = filtered;
   currentPage = 1;
