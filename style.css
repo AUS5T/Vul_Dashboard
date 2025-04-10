@@ -422,3 +422,19 @@ body.dark .dark-mode-switch i {
 .description p:first-child {
   font-weight: bold;
 }
+
+/* Sortable header arrow styling */
+th {
+  cursor: pointer;
+}
+
+.sort-indicator {
+  margin-left: 4px;
+  font-size: 0.8em;
+  color: #999;
+  transition: color 0.3s;
+}
+
+body.dark .sort-indicator {
+  color: #ccc;
+}
