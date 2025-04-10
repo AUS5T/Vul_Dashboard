@@ -109,7 +109,10 @@ function sortTable(columnIndex) {
     return strA.localeCompare(strB) * direction;
   });
 
-  renderTable(sorted);
+  tableData = sorted;
+  currentPage = 1;
+  renderTable();
+
 }
 
 function exportToCSV() {
