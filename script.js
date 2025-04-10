@@ -35,6 +35,12 @@ function renderTable() {
 
     tbody.appendChild(row);
   });
+
+    // ✅ Update pagination display
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById("prevPage").disabled = currentPage === 1;
+  document.getElementById("nextPage").disabled = currentPage === totalPages;
+
 }
 
 document.getElementById("searchBox").addEventListener("input", e => {
