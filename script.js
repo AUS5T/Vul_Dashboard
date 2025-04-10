@@ -15,7 +15,7 @@ function renderTable(data) {
   const end = start + pageSize;
   const pageData = data.slice(start, end);
 
-  data.forEach(item => {
+  pageData.forEach(item => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td><a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a></td>
