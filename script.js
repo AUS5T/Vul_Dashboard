@@ -146,6 +146,7 @@ document.getElementById("prevPage").addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
     renderTable();
+    document.getElementById("pagination").scrollIntoView({ behavior: "smooth", block: "center" });
   }
 });
 
@@ -154,5 +155,6 @@ document.getElementById("nextPage").addEventListener("click", () => {
   if (currentPage < totalPages) {
     currentPage++;
     renderTable();
+    document.getElementById("pagination").scrollIntoView({ behavior: "smooth", block: "center" });
   }
 });
