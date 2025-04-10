@@ -18,9 +18,12 @@ function renderTable(data) {
       <td>${item.product || ''}</td>
       <td>${item.cvssSeverity || ''}</td>
       <td>${item.cvssScore || ''}</td>
+      <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
+      <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
       <td>${item.requiredAction || ''}</td>
       <td>${item.dueDate || ''}</td>
     `;
+
     tbody.appendChild(row);
   });
 }
@@ -48,9 +51,12 @@ function sortTable(columnIndex) {
     1: "product",
     2: "cvssSeverity",
     3: "cvssScore",
-    4: "requiredAction",
-    5: "dueDate",
+    4: "epssScore",
+    5: "epssPercentile",
+    6: "requiredAction",
+    7: "dueDate",
   };
+
   const key = keyMap[columnIndex];
   const sorted = [...tableData].sort((a, b) => {
     const valA = a[key] || "";
