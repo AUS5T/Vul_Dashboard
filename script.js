@@ -45,6 +45,8 @@ document.getElementById("severityFilter").addEventListener("change", e => {
   renderTable(filtered);
 });
 
+let sortDirections = {}; // Keeps track of ascending/descending for each column
+
 function sortTable(columnIndex) {
   const keyMap = {
     0: "cveID",
@@ -56,14 +58,36 @@ function sortTable(columnIndex) {
     6: "requiredAction",
     7: "dueDate",
   };
-
   const key = keyMap[columnIndex];
+
+  // Toggle sort direction (ascending/descending)
+  sortDirections[key] = !sortDirections[key];
+  const direction = sortDirections[key] ? 1 : -1;
+
   const sorted = [...tableData].sort((a, b) => {
-    const valA = a[key] || "";
-    const valB = b[key] || "";
-    if (key === "cvssScore") return parseFloat(valB) - parseFloat(valA);
-    return valA.localeCompare(valB);
+    const valA = a[key];
+    const valB = b[key];
+
+    // Numeric sort for scores
+    if (["cvssScore", "epssScore", "epssPercentile"].includes(key)) {
+      const numA = parseFloat(valA) || 0;
+      const numB = parseFloat(valB) || 0;
+      return (numA - numB) * direction;
+    }
+
+    // Date sort
+    if (key === "dueDate") {
+      const dateA = new Date(valA);
+      const dateB = new Date(valB);
+      return (dateA - dateB) * direction;
+    }
+
+    // Alphabetical sort
+    const strA = valA ? valA.toString().toLowerCase() : "";
+    const strB = valB ? valB.toString().toLowerCase() : "";
+    return strA.localeCompare(strB) * direction;
   });
+
   renderTable(sorted);
 }
 
