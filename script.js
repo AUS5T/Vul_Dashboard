@@ -11,6 +11,10 @@ function renderTable(data) {
   const tbody = document.querySelector("#kevTable tbody");
   tbody.innerHTML = "";
 
+  const start = (currentPage - 1) * pageSize;
+  const end = start + pageSize;
+  const pageData = data.slice(start, end);
+
   data.forEach(item => {
     const row = document.createElement("tr");
     row.innerHTML = `
