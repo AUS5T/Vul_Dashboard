@@ -135,3 +135,18 @@ function exportToCSV() {
 document.getElementById("darkModeToggle").addEventListener("change", e => {
   document.body.classList.toggle("dark", e.target.checked);
 });
+
+document.getElementById("prevPage").addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    renderTable();
+  }
+});
+
+document.getElementById("nextPage").addEventListener("click", () => {
+  const totalPages = Math.ceil(tableData.length / pageSize);
+  if (currentPage < totalPages) {
+    currentPage++;
+    renderTable();
+  }
+});
