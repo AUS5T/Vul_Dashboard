@@ -48,21 +48,32 @@
     </div>
   </div>
 
-  <table id="kevTable"><thead>
-  <tr>
-    <th onclick="sortTable(0)">CVE ID <span class="sort-indicator" id="sort-0"></span></th>
-    <th onclick="sortTable(1)">Product <span class="sort-indicator" id="sort-1"></span></th>
-    <th onclick="sortTable(2)">Severity <span class="sort-indicator" id="sort-2"></span></th>
-    <th onclick="sortTable(3)">CVSS <span class="sort-indicator" id="sort-3"></span></th>
-    <th onclick="sortTable(4)">EPSS Score <span class="sort-indicator" id="sort-4"></span></th>
-    <th onclick="sortTable(5)">EPSS % <span class="sort-indicator" id="sort-5"></span></th>
-    <th onclick="sortTable(6)">Due Date <span class="sort-indicator" id="sort-6"></span></th>
-    <th>Required Action</th> <!-- Not clickable -->
-  </tr>
-</thead>
+<table id="kevTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">CVE ID <span class="sort-indicator" id="sort-0"></span></th>
+      <th onclick="sortTable(1)">Product <span class="sort-indicator" id="sort-1"></span></th>
+      <th onclick="sortTable(2)">Severity <span class="sort-indicator" id="sort-2"></span></th>
+      <th onclick="sortTable(3)">CVSS <span class="sort-indicator" id="sort-3"></span></th>
+      <th onclick="sortTable(4)">EPSS Score <span class="sort-indicator" id="sort-4"></span></th>
+      <th onclick="sortTable(5)">EPSS % <span class="sort-indicator" id="sort-5"></span></th>
+      <th onclick="sortTable(6)">Due Date <span class="sort-indicator" id="sort-6"></span></th>
+      <th>Required Action</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-    <tbody></tbody>
-  </table>
+<div id="pagination" class="pagination-controls">
+  <button id="prevPage">Previous</button>
+  <span id="pageIndicator">Page 1</span>
+  <button id="nextPage">Next</button>
+</div>
+
+<!-- Last Updated Section -->
+<div id="last-updated">
+  Last updated on: <span id="timestamp"></span>
+</div>
 
   <!-- Last Updated Section -->
   <div id="last-updated">
