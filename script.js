@@ -1,19 +1,24 @@
 let tableData = [];
+let fullData = [];
+let currentPage = 1;
+const pageSize = 25;
 
 fetch('kev_enriched.json')
   .then(res => res.json())
   .then(data => {
+    fullData = data;
     tableData = data;
-    renderTable(data);
+    renderTable();
   });
 
-function renderTable(data) {
+function renderTable() {
   const tbody = document.querySelector("#kevTable tbody");
   tbody.innerHTML = "";
 
+  const totalPages = Math.ceil(tableData.length / pageSize);
   const start = (currentPage - 1) * pageSize;
   const end = start + pageSize;
-  const pageData = data.slice(start, end);
+  const pageData = tableData.slice(start, end);
 
   pageData.forEach(item => {
     const row = document.createElement("tr");
@@ -38,15 +43,19 @@ document.getElementById("searchBox").addEventListener("input", e => {
     item.cveID.toLowerCase().includes(search) ||
     (item.product && item.product.toLowerCase().includes(search))
   );
-  renderTable(filtered);
+  tableData = filtered;
+  currentPage = 1;
+  renderTable();
 });
 
 document.getElementById("severityFilter").addEventListener("change", e => {
   const value = e.target.value;
   const filtered = value
     ? tableData.filter(item => item.cvssSeverity === value)
-    : tableData;
-  renderTable(filtered);
+    : fullData; // We'll define this in a moment
+  tableData = filtered;
+  currentPage = 1;
+  renderTable();
 });
 
 let sortDirections = {}; // Tracks ascending/descending state per column
