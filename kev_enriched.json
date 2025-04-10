@@ -31,8 +31,8 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-04-29",
     "dateAdded": "2025-04-08",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-29824 ; https://nvd.nist.gov/vuln/detail/CVE-2025-29824"
   },
   {
@@ -1711,8 +1711,8 @@
     "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2024-10-09",
     "dateAdded": "2024-09-18",
-    "cvssScore": 8.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2020-0618  ;  https://nvd.nist.gov/vuln/detail/CVE-2020-0618"
   },
   {
@@ -7711,8 +7711,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-06-13",
     "dateAdded": "2022-05-23",
-    "cvssScore": 7.8,
-    "cvssSeverity": "HIGH",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-7286"
   },
   {
@@ -12043,8 +12043,8 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-10",
     "dateAdded": "2022-01-10",
-    "cvssScore": 9.8,
-    "cvssSeverity": "CRITICAL",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-10149"
   },
   {
