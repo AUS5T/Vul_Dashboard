@@ -259,8 +259,8 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-04-03",
     "dateAdded": "2025-03-13",
-    "cvssScore": "N/A",
-    "cvssSeverity": "N/A",
+    "cvssScore": 8.8,
+    "cvssSeverity": "HIGH",
     "epssScore": 0.00191,
     "epssPercentile": 0.38176,
     "notes": "https://support.apple.com/en-us/122281 ; https://support.apple.com/en-us/122283 ; https://support.apple.com/en-us/122284 ; https://support.apple.com/en-us/122285 ; ; https://nvd.nist.gov/vuln/detail/CVE-2025-24201"
