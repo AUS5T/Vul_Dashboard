@@ -27,6 +27,22 @@
     </p>
   </div>
 
+  <!-- Collapsible Legend Section -->
+  <div class="key-toggle">
+    <button id="toggleLegend">📘 Legend: What do these values mean?</button>
+    <div id="legendBox" class="key hidden">
+      <ul>
+        <li><strong>CVE ID:</strong> Common Vulnerabilities and Exposures identifier — a unique code assigned to each known vulnerability.</li>
+        <li><strong>Product:</strong> The affected software, system, or component related to the vulnerability.</li>
+        <li><strong>Severity:</strong> Qualitative rating based on CVSS:<br>— <strong>CRITICAL</strong> and <strong>HIGH</strong> should be prioritized.</li>
+        <li><strong>CVSS:</strong> Common Vulnerability Scoring System (0.0–10.0) — indicates severity.<br>— <strong>7.0+</strong> is high risk.</li>
+        <li><strong>EPSS Score:</strong> Exploit Prediction Scoring System (0.0–1.0) — likelihood of exploitation.<br>— <strong>0.7+</strong> is high risk.</li>
+        <li><strong>EPSS %:</strong> Percentile rank across all vulnerabilities.<br>— <strong>90%+</strong> is most likely to be exploited.</li>
+        <li><strong>Due Date:</strong> Deadline set by CISA for remediation.</li>
+        <li><strong>Required Action:</strong> The mitigation step required.</li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Controls Section with CSV export and Dark Mode switch -->
   <div class="controls">
