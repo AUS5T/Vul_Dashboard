@@ -69,14 +69,37 @@
 <table id="kevTable">
   <thead>
     <tr>
-      <th onclick="sortTable(0)">CVE ID <span class="sort-indicator" id="sort-0"></span></th>
-      <th onclick="sortTable(1)">Product <span class="sort-indicator" id="sort-1"></span></th>
-      <th onclick="sortTable(2)">Severity <span class="sort-indicator" id="sort-2"></span></th>
-      <th onclick="sortTable(3)">CVSS <span class="sort-indicator" id="sort-3"></span></th>
-      <th onclick="sortTable(4)">EPSS Score <span class="sort-indicator" id="sort-4"></span></th>
-      <th onclick="sortTable(5)">EPSS % <span class="sort-indicator" id="sort-5"></span></th>
-      <th onclick="sortTable(6)">Due Date <span class="sort-indicator" id="sort-6"></span></th>
-      <th>Required Action</th>
+      <th onclick="sortTable(0)">
+        CVE ID <span class="tooltip-icon" title="Unique ID for the vulnerability.">ℹ️</span>
+        <span class="sort-indicator" id="sort-0"></span>
+      </th>
+      <th onclick="sortTable(1)">
+        Product <span class="tooltip-icon" title="The affected software or system.">ℹ️</span>
+        <span class="sort-indicator" id="sort-1"></span>
+      </th>
+      <th onclick="sortTable(2)">
+        Severity <span class="tooltip-icon" title="LOW, MEDIUM, HIGH, or CRITICAL — based on CVSS.">ℹ️</span>
+        <span class="sort-indicator" id="sort-2"></span>
+      </th>
+      <th onclick="sortTable(3)">
+        CVSS <span class="tooltip-icon" title="Score from 0–10. 7+ is high risk.">ℹ️</span>
+        <span class="sort-indicator" id="sort-3"></span>
+      </th>
+      <th onclick="sortTable(4)">
+        EPSS Score <span class="tooltip-icon" title="0.0–1.0 score. 0.7+ likely to be exploited.">ℹ️</span>
+        <span class="sort-indicator" id="sort-4"></span>
+      </th>
+      <th onclick="sortTable(5)">
+        EPSS % <span class="tooltip-icon" title="Percentile rank — 90%+ is very likely to be exploited.">ℹ️</span>
+        <span class="sort-indicator" id="sort-5"></span>
+      </th>
+      <th onclick="sortTable(6)">
+        Due Date <span class="tooltip-icon" title="CISA’s remediation deadline.">ℹ️</span>
+        <span class="sort-indicator" id="sort-6"></span>
+      </th>
+      <th>
+        Required Action <span class="tooltip-icon" title="What to do to mitigate the vulnerability.">ℹ️</span>
+      </th>
     </tr>
   </thead>
   <tbody></tbody>
