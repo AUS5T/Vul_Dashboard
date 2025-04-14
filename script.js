@@ -3,7 +3,7 @@ let fullData = [];
 let currentPage = 1;
 const pageSize = 25;
 
-fetch('kev_enriched.json')
+fetch('combined_enriched.json')
   .then(res => res.json())
   .then(data => {
     fullData = data;
