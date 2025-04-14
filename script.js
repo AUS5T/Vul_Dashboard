@@ -25,7 +25,7 @@ function renderTable() {
     row.innerHTML = `
       <td>
         <a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a>
-        ${item.dateAdded && item.dateAdded.trim() !== "" ? '<span class="kev-pill">KEV</span>' : ''}
+        ${item.source !== "NVD" ? '<span class="kev-pill">KEV</span>' : ''}
       </td>
 
       <td>${item.product || ''}</td>
