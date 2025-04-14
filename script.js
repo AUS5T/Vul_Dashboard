@@ -34,7 +34,13 @@ function renderTable() {
       <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
       <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
       <td>${item.dueDate || ''}</td>
-      <td>${item.requiredAction || ''}</td>
+      <td>
+        ${
+          item.source === "NVD" && item.requiredAction && item.requiredAction.startsWith("http")
+            ? `<a href="${item.requiredAction}" target="_blank" rel="noopener noreferrer">Vendor Advisory</a>`
+            : item.requiredAction || ''
+        }
+      </td>
     `;
 
     tbody.appendChild(row);
