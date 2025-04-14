@@ -485,3 +485,19 @@ body.dark .key {
   cursor: help;
   margin-left: 4px;
 }
+
+.kev-pill {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  background-color: #d9534f; /* red for emphasis */
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
+body.dark .kev-pill {
+  background-color: #ff5f5f;
+}
