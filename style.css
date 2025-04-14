@@ -476,3 +476,8 @@ body.dark .key {
   margin-bottom: 5px;
 }
 
+.tooltip-icon {
+  font-size: 0.85rem;
+  cursor: help;
+  margin-left: 4px;
+}
