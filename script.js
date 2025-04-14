@@ -23,7 +23,11 @@ function renderTable() {
   pageData.forEach(item => {
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td><a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a></td>
+      <td>
+        <a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a>
+        ${item.dateAdded ? '<span class="kev-pill">KEV</span>' : ''}
+      </td>
+
       <td>${item.product || ''}</td>
       <td>${item.cvssSeverity || ''}</td>
       <td>${item.cvssScore || ''}</td>
