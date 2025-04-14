@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: GitHub Pages (No Manual Deploy)
 
 on:
   push:
@@ -10,20 +10,17 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload site content
+      - name: Upload site output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Replace this with the output folder if you build files into /dist or /build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+          path: .  # Use '.' if your HTML files are in root; otherwise use 'dist' or 'build'
