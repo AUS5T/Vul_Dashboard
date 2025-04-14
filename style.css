@@ -62,12 +62,16 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--table-bg);
+  table-layout: fixed; /* This locks column widths */
 }
 
 th, td {
   border: 1px solid var(--table-border);
   padding: 0.5rem;
   text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 th {
