@@ -438,3 +438,41 @@ th {
 body.dark .sort-indicator {
   color: #ccc;
 }
+
+.key-toggle {
+  margin-bottom: 1rem;
+}
+
+#toggleLegend {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.key {
+  padding: 15px 20px;
+  background-color: #eef3f8;
+  border-left: 5px solid #2196F3;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+body.dark .key {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+  border-left-color: #64b5f6;
+}
+
+.key.hidden {
+  display: none;
+}
+
+.key li {
+  margin-bottom: 5px;
+}
+
