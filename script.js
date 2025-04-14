@@ -158,3 +158,7 @@ document.getElementById("nextPage").addEventListener("click", () => {
     document.getElementById("pagination").scrollIntoView({ behavior: "smooth", block: "center" });
   }
 });
+
+document.getElementById("toggleLegend").addEventListener("click", () => {
+  document.getElementById("legendBox").classList.toggle("hidden");
+});
