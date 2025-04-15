@@ -33,7 +33,10 @@ function renderTable() {
       <td>${item.cvssScore || ''}</td>
       <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
       <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
-      <td>${item.dueDate || ''}</td>
+      <td class="${item.dueDate && new Date(item.dueDate) < new Date() ? 'overdue' : ''}">
+        ${item.dueDate || ''}
+      </td>
+
       <td>
         ${
           item.source === "NVD" && item.requiredAction && item.requiredAction.startsWith("http")
