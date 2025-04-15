@@ -1,56 +1,66 @@
-# Vul_Dashboard
-# KEV Vulnerability Dashboard
+# 🛡️ Vul_Dashboard  
+**KEV Vulnerability Dashboard** — Enriched CISA Feed
 
-This dashboard visualizes the latest **Known Exploited Vulnerabilities (KEVs)** curated by [CISA](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), enriched with CVSS scores from the [NVD](https://nvd.nist.gov/).
+This dashboard displays the latest [Known Exploited Vulnerabilities (KEV)](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) curated by CISA, enriched with:
 
-![Dashboard Preview](assets/images/dashscreen.jpg) <!-- optional: add a screenshot -->
-
----
-
-###  Features
-
-- Updated KEV data on 10 minute intervals (`kev_enriched.json`)
-- Sortable, filterable table (by CVSS, vendor, due date, etc.)
-- Searchable by CVE ID or product name
-- Dark mode toggle 
-- CSV export option for reporting and analysis
+- ⚠️ **CVSS severity scores** (from the NVD)  
+- 📈 **EPSS exploitation likelihood** (from FIRST.org)
 
 ---
 
-###  How It Works
+## 🔍 Features
 
-- This dashboard is automatically updated via GitHub Actions
-- The `kev_enriched.json` file is pushed from a separate source
-- All data is pulled from:
+- ✅ Updated every **10 minutes** via GitHub Actions (`kev_enriched.json`)
+- 📊 **Sortable & filterable** table (by severity, product, due date, etc.)
+- 🔎 **Search** by CVE ID or product name
+- 📁 **CSV export** for reporting or triage workflows
+- 🌙 **Dark mode toggle**
+- ⏱️ **Time frame filter** (e.g. last 7 days, 30 days, 1 year)
+- 🚨 **Overdue dates highlighted in red**
+
+---
+
+## ⚙️ How It Works
+
+- 🔄 `kev_enriched.json` is automatically updated by GitHub Actions
+- 💡 Data sources:
   - [CISA KEV Feed (JSON)](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json)
-  - [NVD JSON Modified Feed](https://nvd.nist.gov/vuln/data-feeds)
+  - [NVD Modified JSON Feed](https://nvd.nist.gov/vuln/data-feeds)
+  - [FIRST.org EPSS API](https://www.first.org/epss)
 
 ---
 
-###  Viewing the Dashboard
+## 🌐 Viewing the Dashboard
 
-> 💡 If this repo is private, clone it and open `index.html` locally in your browser.  
-> Once public and GitHub Pages is enabled, you’ll be able to visit:
-
-https://AUS5T.github.io/Vul_Dashboard/
-
+- 📂 If this repo is private, **clone and open `index.html` locally**  
+- 🔗 If GitHub Pages is enabled, view the live dashboard at:  
+  [https://AUS5T.github.io/Vul_Dashboard/](https://AUS5T.github.io/Vul_Dashboard/)
 
 ---
 
-###  Project Structure
+## 🗂️ Project Structure
 
-📦 Vul_Dashboard ┣ 📄 index.html ← Main dashboard UI ┣ 📄 script.js ← Loads and filters JSON ┣ 📄 style.css ← Layout and dark mode ┣ 📄 kev_enriched.json ← Auto-updated CVE data
-
+```
+📦 Vul_Dashboard
+┣ 📄 index.html         # Dashboard UI
+┣ 📄 script.js          # Data loader, filtering, pagination
+┣ 📄 style.css          # Visual styling & dark mode
+┣ 📄 kev_enriched.json  # Auto-updated enriched KEV data
+┣ 📄 last_updated.txt   # Timestamp for last sync
+```
 
 ---
 
-###  Credits
+## 🤝 Credits
 
-- Data from CISA + NVD
-- Dashboard powered by GitHub Actions + static web tech
+- 📊 CVE + CVSS data from [NVD](https://nvd.nist.gov/)
+- 🔐 Exploited vulnerability data from [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+- 📈 EPSS prediction from [FIRST.org](https://www.first.org/epss/)
+- 🔧 Automation powered by **GitHub Actions**
 
 ---
 
-###  Status: In Progress
+## 🚧 Status
 
-This dashboard is under active development. Suggestions welcome!
+This dashboard is under **active development**.  
+Suggestions and contributions welcome!
