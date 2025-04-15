@@ -59,19 +59,6 @@ function renderTable() {
       </td>
     `;
 
-// === Expand/Collapse Required Action ===
-// Toggles the expanded class on the required action div
-function toggleExpand(linkElement) {
-  const actionDiv = linkElement.previousElementSibling;
-  actionDiv.classList.toggle("expanded");
-
-  if (actionDiv.classList.contains("expanded")) {
-    linkElement.textContent = "Show less";
-  } else {
-    linkElement.textContent = "Show more";
-  }
-}
-
     // Optional expand/collapse logic for long Required Actions
     const actionDiv = row.querySelector('.required-action');
     if (actionDiv && actionDiv.scrollHeight > actionDiv.clientHeight + 5) {
@@ -88,6 +75,19 @@ function toggleExpand(linkElement) {
     tbody.appendChild(row);
   });
 
+// === Expand/Collapse Required Action ===
+// Toggles the expanded class on the required action div
+function toggleExpand(linkElement) {
+  const actionDiv = linkElement.previousElementSibling;
+  actionDiv.classList.toggle("expanded");
+
+  if (actionDiv.classList.contains("expanded")) {
+    linkElement.textContent = "Show less";
+  } else {
+    linkElement.textContent = "Show more";
+  }
+}
+  
   // Pagination Controls
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
   document.getElementById("prevPage").disabled = currentPage === 1;
