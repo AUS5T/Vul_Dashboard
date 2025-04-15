@@ -51,8 +51,26 @@ function renderTable() {
               : item.requiredAction || ''
           }
         </div>
+        ${
+          item.requiredAction && item.requiredAction.length > 100
+            ? '<span class="toggle-link" onclick="toggleExpand(this)">Show more</span>'
+            : ''
+        }
       </td>
     `;
+
+// === Expand/Collapse Required Action ===
+// Toggles the expanded class on the required action div
+function toggleExpand(linkElement) {
+  const actionDiv = linkElement.previousElementSibling;
+  actionDiv.classList.toggle("expanded");
+
+  if (actionDiv.classList.contains("expanded")) {
+    linkElement.textContent = "Show less";
+  } else {
+    linkElement.textContent = "Show more";
+  }
+}
 
     // Optional expand/collapse logic for long Required Actions
     const actionDiv = row.querySelector('.required-action');
