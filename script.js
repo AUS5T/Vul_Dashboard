@@ -1,5 +1,5 @@
 // === KEV Vulnerability Dashboard Script ===
-// Loads, filters, sorts, and displays enriched CVE data from combined_enriched.json
+// Loads, filters, sorts, and displays enriched CVE data
 
 // === Global Variables and Initial Fetch ===
 let tableData = [];
