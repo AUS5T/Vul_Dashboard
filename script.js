@@ -28,6 +28,7 @@ function renderTable() {
 
   pageData.forEach(item => {
     const row = document.createElement("tr");
+
     row.innerHTML = `
       <td>
         <a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a>
@@ -52,11 +53,10 @@ function renderTable() {
         </div>
       </td>
     `;
-    tbody.appendChild(row);
 
-    // Add expand/collapse logic for Required Action
+    // Optional expand/collapse logic for long Required Actions
     const actionDiv = row.querySelector('.required-action');
-    if (actionDiv.scrollHeight > actionDiv.clientHeight) {
+    if (actionDiv && actionDiv.scrollHeight > actionDiv.clientHeight + 5) {
       const toggleLink = document.createElement('span');
       toggleLink.className = 'toggle-link';
       toggleLink.textContent = 'Show more';
@@ -67,8 +67,8 @@ function renderTable() {
       actionDiv.appendChild(toggleLink);
     }
 
+    tbody.appendChild(row);
   });
-}
 
   // Pagination Controls
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
