@@ -64,15 +64,36 @@ document.getElementById("searchBox").addEventListener("input", e => {
   renderTable();
 });
 
-document.getElementById("severityFilter").addEventListener("change", e => {
-  const value = e.target.value;
-  const filtered = value
-    ? fullData.filter(item => item.cvssSeverity === value)
-    : fullData; // We'll define this in a moment
-  tableData = filtered;
+document.getElementById("severityFilter").addEventListener("change", applyFilters);
+document.getElementById("dateFilter").addEventListener("change", applyFilters);
+
+function applyFilters() {
+  const severityValue = document.getElementById("severityFilter").value;
+  const dateValue = document.getElementById("dateFilter").value;
+
+  const now = new Date();
+  tableData = fullData.filter(item => {
+    const matchesSeverity = severityValue ? item.cvssSeverity === severityValue : true;
+
+    let matchesDate = true;
+    if (dateValue) {
+      const daysAgo = parseInt(dateValue);
+      const itemDate = item.dateAdded ? new Date(item.dateAdded) : null;
+
+      if (itemDate && !isNaN(itemDate)) {
+        const cutoff = new Date(now.getTime() - daysAgo * 24 * 60 * 60 * 1000);
+        matchesDate = itemDate >= cutoff;
+      } else {
+        matchesDate = false; // Exclude if no valid date
+      }
+    }
+
+    return matchesSeverity && matchesDate;
+  });
+
   currentPage = 1;
   renderTable();
-});
+}
 
 let sortDirections = {}; // Tracks ascending/descending state per column
 
