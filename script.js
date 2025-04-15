@@ -7,7 +7,7 @@ let fullData = [];
 let currentPage = 1;
 const pageSize = 25;
 
-fetch('combined_enriched.json')
+fetch('kev_enriched.json')
   .then(res => res.json())
   .then(data => {
     fullData = data;
