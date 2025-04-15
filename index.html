@@ -77,15 +77,17 @@
 
 <table id="kevTable">
   <colgroup>
-    <col style="width: 10%;">
-    <col style="width: 20%;">
-    <col style="width: 10%;">
-    <col style="width: 10%;">
-    <col style="width: 10%;">
-    <col style="width: 10%;">
-    <col style="width: 15%;">
-    <col style="width: 15%;">
+    <col style="width: 10%;"> <!-- CVE ID -->
+    <col style="width: 15%;"> <!-- Product -->
+    <col style="width: 10%;"> <!-- Severity -->
+    <col style="width: 10%;"> <!-- CVSS -->
+    <col style="width: 10%;"> <!-- EPSS Score -->
+    <col style="width: 10%;"> <!-- EPSS % -->
+    <col style="width: 10%;"> <!-- Date Added -->
+    <col style="width: 10%;"> <!-- Due Date -->
+    <col style="width: 15%;"> <!-- Required Action -->
   </colgroup>
+
 
   <thead>
     <tr>
@@ -119,11 +121,12 @@
       </th>
       <th onclick="sortTable(7)">
         Due Date <span class="tooltip-icon" title="CISA’s remediation deadline.">ℹ️</span>
-        <span class="sort-indicator" id="sort-6"></span>
+        <span class="sort-indicator" id="sort-7"></span>
       </th>
       <th>
         Required Action <span class="tooltip-icon" title="What to do to mitigate the vulnerability.">ℹ️</span>
       </th>
+
     </tr>
   </thead>
   <tbody></tbody>
