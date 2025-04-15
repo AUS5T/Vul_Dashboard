@@ -16,6 +16,7 @@ fetch('combined_enriched.json')
   });
 
 // === Render Table Function ===
+// Populates the table with current page of filtered/sorted CVE entries
 function renderTable() {
   const tbody = document.querySelector("#kevTable tbody");
   tbody.innerHTML = "";
@@ -42,15 +43,32 @@ function renderTable() {
         ${item.dueDate || ''}
       </td>
       <td>
-        ${
-          item.source === "NVD" && item.requiredAction && item.requiredAction.startsWith("http")
-            ? `<a href="${item.requiredAction}" target="_blank" rel="noopener noreferrer">Vendor Advisory</a>`
-            : item.requiredAction || ''
-        }
+        <div class="required-action">
+          ${
+            item.source === "NVD" && item.requiredAction && item.requiredAction.startsWith("http")
+              ? `<a href="${item.requiredAction}" target="_blank" rel="noopener noreferrer">Vendor Advisory</a>`
+              : item.requiredAction || ''
+          }
+        </div>
       </td>
     `;
     tbody.appendChild(row);
+
+    // Add expand/collapse logic for Required Action
+    const actionDiv = row.querySelector('.required-action');
+    if (actionDiv.scrollHeight > actionDiv.clientHeight) {
+      const toggleLink = document.createElement('span');
+      toggleLink.className = 'toggle-link';
+      toggleLink.textContent = 'Show more';
+      toggleLink.addEventListener('click', () => {
+        actionDiv.classList.toggle('expanded');
+        toggleLink.textContent = actionDiv.classList.contains('expanded') ? 'Show less' : 'Show more';
+      });
+      actionDiv.appendChild(toggleLink);
+    }
+
   });
+}
 
   // Pagination Controls
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
