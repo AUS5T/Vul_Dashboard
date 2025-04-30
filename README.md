@@ -10,7 +10,7 @@ This dashboard displays the latest [Known Exploited Vulnerabilities (KEV)](https
 
 ## 🔍 Features
 
-- ✅ Updated every **10 minutes** via GitHub Actions (`kev_enriched.json`)
+- ✅ Updated once every **hour** via GitHub Actions (`kev_enriched.json`)
 - 📊 **Sortable & filterable** table (by severity, product, due date, etc.)
 - 🔎 **Search** by CVE ID or product name
 - 📁 **CSV export** for reporting or triage workflows
