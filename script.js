@@ -7,6 +7,12 @@ let fullData = [];
 let currentPage = 1;
 const pageSize = 25;
 
+function getAttackVector(cvssVector) {
+  if (!cvssVector) return null;
+  const match = cvssVector.match(/AV:([NALP])/);
+  return match ? match[1] : null;
+}
+
 fetch('kev_enriched.json')
   .then(res => res.json())
   .then(data => {
@@ -36,7 +42,10 @@ function renderTable() {
       </td>
       <td>${item.product || ''}</td>
       <td>${item.cvssSeverity || ''}</td>
-      <td>${item.cvssScore || ''}</td>
+      <td title="${item.cvssVector && item.cvssVector !== 'N/A' ? item.cvssVector : ''}">
+        ${item.cvssScore !== "N/A" && item.cvssScore != null ? item.cvssScore : 'N/A'}
+        ${item.cvssVersion && item.cvssVersion !== "N/A" ? `<span class="cvss-version">(${item.cvssVersion})</span>` : ''}
+      </td>
       <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
       <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
       <td>${item.dateAdded || ''}</td>
@@ -109,10 +118,12 @@ document.getElementById("searchBox").addEventListener("input", e => {
 // === Dropdown Filters (Severity and Date) ===
 document.getElementById("severityFilter").addEventListener("change", applyFilters);
 document.getElementById("dateFilter").addEventListener("change", applyFilters);
+document.getElementById("attackVectorFilter").addEventListener("change", applyFilters);
 
 function applyFilters() {
   const severityValue = document.getElementById("severityFilter").value;
   const dateValue = document.getElementById("dateFilter").value;
+  const attackVectorValue = document.getElementById("attackVectorFilter").value;
   const now = new Date();
 
   tableData = fullData.filter(item => {
@@ -131,7 +142,11 @@ function applyFilters() {
       }
     }
 
-    return matchesSeverity && matchesDate;
+    const av = getAttackVector(item.cvssVector);
+    const matchesAV = attackVectorValue ? av === attackVectorValue : true;
+
+    return matchesSeverity && matchesDate && matchesAV;
+
   });
 
   currentPage = 1;
