@@ -32,6 +32,14 @@
     <button id="toggleLegend">📘 Legend: What do these values mean?</button>
     <div id="legendBox" class="key hidden">
       <ul>
+        <li>
+          <strong>CVSS Version:</strong> Shown in parentheses next to the CVSS score, indicating which scoring system (e.g., 2.0, 3.1, 4.0) was used. CVSS v4 is the newest and most comprehensive.
+        </li>
+        <li>
+          <strong>CVSS Vector:</strong> Hover over the CVSS score to see the full vector breakdown (e.g., <code>AV:N/AC:L/PR:N/UI:N</code>) describing how the vulnerability is exploited.<br>
+          <em>Need help understanding these terms?</em> See the 
+          <a href="https://www.first.org/cvss/specification-document" target="_blank" rel="noopener noreferrer">CVSS Specification Guide</a>.
+        </li>
         <li><strong>CVE ID:</strong> Common Vulnerabilities and Exposures identifier — a unique code assigned to each known vulnerability.</li>
         <li><strong>Product:</strong> The affected software, system, or component related to the vulnerability.</li>
         <li><strong>Severity:</strong> Qualitative rating based on CVSS:<br>— <strong>CRITICAL</strong> and <strong>HIGH</strong> should be prioritized.</li>
@@ -151,11 +159,6 @@
 <div id="last-updated">
   Last updated on: <span id="timestamp"></span>
 </div>
-
-  <!-- Last Updated Section -->
-  <div id="last-updated">
-    Last updated on: <span id="timestamp"></span>
-  </div>
 
   <!-- JavaScript to load the last updated timestamp -->
   <script>
