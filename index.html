@@ -2,91 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KEV Vulnerability Dashboard</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    #legend-toggle {
-      cursor: pointer;
-      color: #007bff;
-      text-decoration: underline;
-      margin-bottom: 10px;
-    }
-
-    #legend {
-      display: none;
-      margin-bottom: 20px;
-      padding: 10px;
-      background-color: #f2f2f2;
-      border-left: 4px solid #007bff;
-    }
-
-    table.dataTable tbody tr:hover {
-      background-color: #f1f1f1;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
+
 <body>
-  <h2>KEV Vulnerability Dashboard</h2>
-
-  <!-- Toggle to show/hide the legend -->
-  <div id="legend-toggle">Show Legend</div>
-
-  <!-- Legend explaining CVSS and EPSS -->
-  <div id="legend">
-    <p><strong>CVSS Score:</strong> Measures severity of a vulnerability from 0 to 10. <a href="https://nvd.nist.gov/vuln-metrics/cvss" target="_blank">CVSS Info</a></p>
-    <p><strong>EPSS Score:</strong> Likelihood of exploitation in the next 30 days. Provided by FIRST.org.</p>
-    <p><strong>Attack Vector:</strong> Tooltip shown when hovering over the vulnerability column. <a href="https://www.first.org/cvss/specification-document#t3.2" target="_blank">Attack Vector Types</a></p>
+  <div class="header">
+    <img src="assets/images/logo.png" alt="Logo" class="logo" />
+    <h1>Known Exploited Vulnerabilities</h1>
   </div>
 
-  <!-- Table to display vulnerabilities -->
-  <table id="vuln-table" class="display" style="width:100%">
-    <thead>
-      <tr>
-        <th>CVE ID</th>
-        <th>Vendor</th>
-        <th>Product</th>
-        <th>Vulnerability</th>
-        <th>CVSS Score (Version)</th>
-        <th>CVSS Severity</th>
-        <th>EPSS Score</th>
-        <th>EPSS Percentile</th>
-        <th>Due Date</th>
-        <th>Required Action</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <!-- Short Description Section -->
+  <div class="description">
+    <p>
+      This dashboard provides information about Known Exploited Vulnerabilities (KEV) tracked by CISA. 
+      It pulls data from multiple sources including the National Vulnerability Database (NVD), the Known Exploited Vulnerabilities catalog, and Exploit Prediction Scoring System (EPSS).
+    </p>
+    <p>
+      Each entry is enriched with key details such as CVSS severity scores, EPSS exploitation likelihood, required remediation actions, and due dates. 
+      The goal is to quickly prioritize and respond to threats that are actively being exploited in the wild.
+    </p>
+  </div>
 
-  <!-- jQuery and DataTables scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <!-- Collapsible Legend Section -->
+  <div class="key-toggle">
+    <button id="toggleLegend">📘 Legend: What do these values mean?</button>
+    <div id="legendBox" class="key hidden">
+      <ul>
+        <li>
+          <strong>CVSS Version:</strong> Shown in parentheses next to the CVSS score, indicating which scoring system (e.g., 2.0, 3.1, 4.0) was used. CVSS v4 is the newest and most comprehensive.
+        </li>
+        <li>
+          <strong>CVSS Vector:</strong> Hover over the CVSS score to see the full vector breakdown (e.g., <code>AV:N/AC:L/PR:N/UI:N</code>) describing how the vulnerability is exploited.<br>
+          <em>Need help understanding these terms?</em> See the 
+          <a href="https://www.first.org/cvss/specification-document" target="_blank" rel="noopener noreferrer">CVSS Specification Guide</a>.
+        </li>
+        <li><strong>CVE ID:</strong> Common Vulnerabilities and Exposures identifier — a unique code assigned to each known vulnerability.</li>
+        <li><strong>Product:</strong> The affected software, system, or component related to the vulnerability.</li>
+        <li><strong>Severity:</strong> Qualitative rating based on CVSS:<br>— <strong>CRITICAL</strong> and <strong>HIGH</strong> should be prioritized.</li>
+        <li><strong>CVSS:</strong> Common Vulnerability Scoring System (0.0–10.0) — indicates severity.<br>— <strong>7.0+</strong> is high risk.</li>
+        <li><strong>EPSS Score:</strong> Exploit Prediction Scoring System (0.0–1.0) — likelihood of exploitation.<br>— <strong>0.7+</strong> is high risk.</li>
+        <li><strong>EPSS %:</strong> Percentile rank across all vulnerabilities.<br>— <strong>90%+</strong> is most likely to be exploited.</li>
+        <li><strong>Date Added:</strong> The date when the vulnerability was added to the CISA KEV catalog.</li>
+        <li><strong>Due Date:</strong> Deadline set by CISA for remediation.</li>
+        <li><strong>Required Action:</strong> The mitigation step required.</li>
+      </ul>
+    </div>
+  </div>
 
-  <!-- Load and render table from external JS -->
-  <script src="script.js"></script>
+  <!-- Controls Section with CSV export and Dark Mode switch -->
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="Search by CVE ID or product..." />
+    <select id="severityFilter">
+      <option value="">All Severities</option>
+      <option value="CRITICAL">CRITICAL</option>
+      <option value="HIGH">HIGH</option>
+      <option value="MEDIUM">MEDIUM</option>
+      <option value="LOW">LOW</option>
+    </select>
 
-  <!-- Script to toggle legend visibility -->
+    <select id="dateFilter" style="margin-left: 1rem;">
+      <option value="">All Time</option>
+      <option value="7">Last 7 Days</option>
+      <option value="30">Last 30 Days</option>
+      <option value="180">Last 180 Days</option>
+      <option value="365">Last 1 Year</option>
+    </select>
+
+    <select id="attackVectorFilter" style="margin-left: 1rem;">
+      <option value="">All Vectors</option>
+      <option value="N">Network (AV:N)</option>
+      <option value="A">Adjacent (AV:A)</option>
+      <option value="L">Local (AV:L)</option>
+      <option value="P">Physical (AV:P)</option>
+    </select>
+
+    <button onclick="exportToCSV()">Export CSV</button>
+
+    <!-- Dark Mode Switch and Icon -->
+    <div class="dark-mode-switch">
+      <i class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+<table id="kevTable">
+  <colgroup>
+    <col style="width: 10%;"> <!-- CVE ID -->
+    <col style="width: 15%;"> <!-- Product -->
+    <col style="width: 10%;"> <!-- Severity -->
+    <col style="width: 10%;"> <!-- CVSS -->
+    <col style="width: 10%;"> <!-- EPSS Score -->
+    <col style="width: 10%;"> <!-- EPSS % -->
+    <col style="width: 10%;"> <!-- Date Added -->
+    <col style="width: 10%;"> <!-- Due Date -->
+    <col style="width: 15%;"> <!-- Required Action -->
+  </colgroup>
+
+
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">
+        CVE ID <span class="tooltip-icon" title="Unique ID for the vulnerability.">ℹ️</span>
+        <span class="sort-indicator" id="sort-0"></span>
+      </th>
+      <th onclick="sortTable(1)">
+        Product <span class="tooltip-icon" title="The affected software or system.">ℹ️</span>
+        <span class="sort-indicator" id="sort-1"></span>
+      </th>
+      <th onclick="sortTable(2)">
+        Severity <span class="tooltip-icon" title="LOW, MEDIUM, HIGH, or CRITICAL — based on CVSS.">ℹ️</span>
+        <span class="sort-indicator" id="sort-2"></span>
+      </th>
+      <th onclick="sortTable(3)">
+        CVSS <span class="tooltip-icon" title="Score from 0–10. 7+ is high risk.">ℹ️</span>
+        <span class="sort-indicator" id="sort-3"></span>
+      </th>
+      <th onclick="sortTable(4)">
+        EPSS Score <span class="tooltip-icon" title="0.0–1.0 score. 0.7+ likely to be exploited.">ℹ️</span>
+        <span class="sort-indicator" id="sort-4"></span>
+      </th>
+      <th onclick="sortTable(5)">
+        EPSS % <span class="tooltip-icon" title="Percentile rank — 90%+ is very likely to be exploited.">ℹ️</span>
+        <span class="sort-indicator" id="sort-5"></span>
+      </th>
+      <th onclick="sortTable(6)">
+        Date Added <span class="tooltip-icon" title="The date the CVE was added to the KEV catalog.">ℹ️</span>
+        <span class="sort-indicator" id="sort-6"></span>
+      </th>
+      <th onclick="sortTable(7)">
+        Due Date <span class="tooltip-icon" title="CISA’s remediation deadline.">ℹ️</span>
+        <span class="sort-indicator" id="sort-7"></span>
+      </th>
+      <th>
+        Required Action <span class="tooltip-icon" title="What to do to mitigate the vulnerability.">ℹ️</span>
+      </th>
+
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<div id="pagination" class="pagination-controls">
+  <button id="prevPage">Previous</button>
+  <span id="pageIndicator">Page 1</span>
+  <button id="nextPage">Next</button>
+</div>
+
+<!-- Last Updated Section -->
+<div id="last-updated">
+  Last updated on: <span id="timestamp"></span>
+</div>
+
+  <!-- JavaScript to load the last updated timestamp -->
   <script>
-    document.getElementById("legend-toggle").addEventListener("click", function () {
-      const legend = document.getElementById("legend");
-      const toggle = document.getElementById("legend-toggle");
-      if (legend.style.display === "none") {
-        legend.style.display = "block";
-        toggle.textContent = "Hide Legend";
-      } else {
-        legend.style.display = "none";
-        toggle.textContent = "Show Legend";
-      }
-    });
+    fetch('last_updated.txt')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the timestamp into the span with id 'timestamp'
+            document.getElementById('timestamp').innerText = data.trim();
+        })
+        .catch(err => console.error('Error loading last updated timestamp:', err));
   </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Trigger rebuild -->
