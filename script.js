@@ -1,59 +1,36 @@
-// === Fetch the enriched KEV data ===
-fetch('kev_enriched.json')
-  .then(response => response.json())
-  .then(data => populateTable(data));
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('kev_enriched.json')
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.querySelector('#vuln-table tbody');
+      tableBody.innerHTML = '';
 
-// === Populate the HTML table with KEV data ===
-function populateTable(data) {
-  const tableBody = document.getElementById('kev-table-body');
-  tableBody.innerHTML = '';
+      data.forEach(vuln => {
+        const row = document.createElement('tr');
 
-  data.forEach(entry => {
-    const row = document.createElement('tr');
+        const scoreWithVersion = vuln.cvssScore !== "N/A"
+          ? `${vuln.cvssScore} (${vuln.cvssVersion})`
+          : '';
 
-    // Format each column cell
-    row.innerHTML = `
-      <td>${entry.cveID}</td>
-      <td>${entry.vendor || ''}</td>
-      <td>${entry.product || ''}</td>
-      <td>${entry.vulnerabilityName || ''}</td>
-      <td>${entry.dateAdded || ''}</td>
-      <td>${entry.dueDate || ''}</td>
-      <td>${entry.description || 'N/A'}</td>  <!-- NEW: CVE description -->
-      <td>${entry.requiredAction || ''}</td>
-      <td>${entry.cvssScore}</td>
-      <td>${entry.cvssSeverity}</td>
-      <td>${entry.cvssVersion}</td>
-      <td>${entry.epssScore}</td>
-      <td>${entry.epssPercentile}</td>
-    `;
+        row.innerHTML = `
+          <td><a href="https://nvd.nist.gov/vuln/detail/${vuln.cveID}" target="_blank">${vuln.cveID}</a></td>
+          <td>${vuln.vendor || ''}</td>
+          <td>${vuln.product || ''}</td>
+          <td title="Attack Vector: ${vuln.cvssVector || 'N/A'}">${vuln.description || vuln.vulnerabilityName || ''}</td>
+          <td>${scoreWithVersion}</td>
+          <td>${vuln.cvssSeverity !== "N/A" ? vuln.cvssSeverity : ''}</td>
+          <td>${vuln.epssScore !== "N/A" ? vuln.epssScore : ''}</td>
+          <td>${vuln.epssPercentile !== "N/A" ? vuln.epssPercentile : ''}</td>
+          <td>${vuln.dueDate || ''}</td>
+          <td>${vuln.requiredAction || ''}</td>
+        `;
+        tableBody.appendChild(row);
+      });
 
-    tableBody.appendChild(row);
-  });
-}
-
-// === Filter table by search input ===
-function searchTable() {
-  const input = document.getElementById('searchInput');
-  const filter = input.value.toUpperCase();
-  const rows = document.querySelectorAll('#kev-table-body tr');
-
-  rows.forEach(row => {
-    const cells = row.getElementsByTagName('td');
-    let match = false;
-
-    // Search in all columns
-    for (let i = 0; i < cells.length; i++) {
-      const textValue = cells[i].textContent || cells[i].innerText;
-      if (textValue.toUpperCase().indexOf(filter) > -1) {
-        match = true;
-        break;
-      }
-    }
-
-    row.style.display = match ? '' : 'none';
-  });
-}
-
-// === Listen for search bar input ===
-document.getElementById('searchInput').addEventListener('input', searchTable);
+      // Init DataTable with sorting and searching
+      $('#vuln-table').DataTable({
+        order: [[0, 'asc']],
+        pageLength: 25
+      });
+    });
+});
