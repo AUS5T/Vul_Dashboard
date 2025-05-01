@@ -2,27 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KEV Vulnerability Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    #legend-toggle {
+      cursor: pointer;
+      color: #007bff;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+
+    #legend {
+      display: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-left: 4px solid #007bff;
+    }
+
+    table.dataTable tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Known Exploited Vulnerabilities (KEV)</h1>
+  <h2>KEV Vulnerability Dashboard</h2>
+
+  <!-- Toggle to show/hide the legend -->
+  <div id="legend-toggle">Show Legend</div>
+
+  <!-- Legend explaining CVSS and EPSS -->
+  <div id="legend">
+    <p><strong>CVSS Score:</strong> Measures severity of a vulnerability from 0 to 10. <a href="https://nvd.nist.gov/vuln-metrics/cvss" target="_blank">CVSS Info</a></p>
+    <p><strong>EPSS Score:</strong> Likelihood of exploitation in the next 30 days. Provided by FIRST.org.</p>
+    <p><strong>Attack Vector:</strong> Tooltip shown when hovering over the vulnerability column. <a href="https://www.first.org/cvss/specification-document#t3.2" target="_blank">Attack Vector Types</a></p>
   </div>
 
-  <!-- Collapsible Legend -->
-  <details style="margin-bottom: 1em;">
-    <summary><strong>Legend & Guide</strong></summary>
-    <p><strong>CVSS Score:</strong> Common Vulnerability Scoring System rating, numeric severity (v4 → v3 → v2).</p>
-    <p><strong>CVSS Severity:</strong> Descriptive level (e.g., Critical, High).</p>
-    <p><strong>EPSS Score:</strong> Likelihood of exploitation (0.0–1.0).</p>
-    <p><strong>EPSS Percentile:</strong> Rank among vulnerabilities (higher = more likely to be exploited).</p>
-    <p><strong>Vulnerability (hover):</strong> NVD description with tooltip showing <a href="https://www.first.org/cvss/v3.1/specification-document#7-Attack-Vector" target="_blank">attack vector</a>.</p>
-  </details>
-
-  <!-- Table -->
+  <!-- Table to display vulnerabilities -->
   <table id="vuln-table" class="display" style="width:100%">
     <thead>
       <tr>
@@ -41,9 +67,26 @@
     <tbody></tbody>
   </table>
 
-  <!-- JS includes -->
+  <!-- jQuery and DataTables scripts -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+  <!-- Load and render table from external JS -->
   <script src="script.js"></script>
+
+  <!-- Script to toggle legend visibility -->
+  <script>
+    document.getElementById("legend-toggle").addEventListener("click", function () {
+      const legend = document.getElementById("legend");
+      const toggle = document.getElementById("legend-toggle");
+      if (legend.style.display === "none") {
+        legend.style.display = "block";
+        toggle.textContent = "Hide Legend";
+      } else {
+        legend.style.display = "none";
+        toggle.textContent = "Show Legend";
+      }
+    });
+  </script>
 </body>
 </html>
