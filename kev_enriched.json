@@ -11,8 +11,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.58471,
-    "epssPercentile": 0.98039,
+    "epssScore": 0.55636,
+    "epssPercentile": 0.97926,
     "notes": "https://me.sap.com/notes/3594142 ; https://nvd.nist.gov/vuln/detail/CVE-2025-31324",
     "source": "KEV"
   },
@@ -29,7 +29,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.01701,
-    "epssPercentile": 0.81241,
+    "epssPercentile": 0.81328,
     "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25602 ; https://nvd.nist.gov/vuln/detail/CVE-2025-1976",
     "source": "KEV"
   },
@@ -46,7 +46,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.20469,
-    "epssPercentile": 0.95175,
+    "epssPercentile": 0.95215,
     "notes": "https://www.qualitia.com/jp/news/2025/04/18_1030.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-42599",
     "source": "KEV"
   },
@@ -62,8 +62,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.27931,
-    "epssPercentile": 0.96147,
+    "epssScore": 0.30067,
+    "epssPercentile": 0.96384,
     "notes": "https://documentation.commvault.com/securityadvisories/CV_2025_03_1.html;   https://www.commvault.com/blogs/notice-security-advisory-update;   https://nvd.nist.gov/vuln/detail/CVE-2025-3928      ",
     "source": "KEV"
   },
@@ -80,7 +80,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.13705,
-    "epssPercentile": 0.93843,
+    "epssPercentile": 0.93893,
     "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24054 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24054",
     "source": "KEV"
   },
@@ -97,7 +97,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.00353,
-    "epssPercentile": 0.5672,
+    "epssPercentile": 0.56886,
     "notes": "https://support.apple.com/en-us/122282 ; https://support.apple.com/en-us/122400 ; https://support.apple.com/en-us/122401 ; https://support.apple.com/en-us/122402 ; https://nvd.nist.gov/vuln/detail/CVE-2025-31201",
     "source": "KEV"
   },
@@ -114,7 +114,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.0044,
-    "epssPercentile": 0.61941,
+    "epssPercentile": 0.62103,
     "notes": "https://support.apple.com/en-us/122282 ; https://support.apple.com/en-us/122400 ; https://support.apple.com/en-us/122401 ; https://support.apple.com/en-us/122402 ; https://nvd.nist.gov/vuln/detail/CVE-2025-31200",
     "source": "KEV"
   },
@@ -182,7 +182,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.04492,
-    "epssPercentile": 0.88449,
+    "epssPercentile": 0.8852,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-29824 ; https://nvd.nist.gov/vuln/detail/CVE-2025-29824",
     "source": "KEV"
   },
@@ -198,8 +198,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.67554,
-    "epssPercentile": 0.98441,
+    "epssScore": 0.65562,
+    "epssPercentile": 0.98378,
     "notes": "https://gladinetsupport.s3.us-east-1.amazonaws.com/gladinet/securityadvisory-cve-2005.pdf ; https://gladinetsupport.s3.us-east-1.amazonaws.com/gladinet/securityadvisory-cve-2025-triofox.pdf ; https://nvd.nist.gov/vuln/detail/CVE-2025-30406",
     "source": "KEV"
   },
@@ -216,7 +216,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.21209,
-    "epssPercentile": 0.95285,
+    "epssPercentile": 0.95323,
     "notes": "https://www.crushftp.com/crush11wiki/Wiki.jsp?page=Update ; https://nvd.nist.gov/vuln/detail/CVE-2025-31161",
     "source": "KEV"
   },
@@ -233,7 +233,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.10245,
-    "epssPercentile": 0.92686,
+    "epssPercentile": 0.9274,
     "notes": "CISA Mitigation Instructions: https://www.cisa.gov/cisa-mitigation-instructions-cve-2025-22457 ; Additional References: https://forums.ivanti.com/s/article/April-Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-22457) ; https://nvd.nist.gov/vuln/detail/CVE-2025-22457",
     "source": "KEV"
   },
@@ -250,7 +250,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.9324,
-    "epssPercentile": 0.99789,
+    "epssPercentile": 0.99795,
     "notes": "https://lists.apache.org/thread/j5fkjv2k477os90nczf2v9l61fb0kkgq ; https://nvd.nist.gov/vuln/detail/CVE-2025-24813",
     "source": "KEV"
   },
@@ -284,7 +284,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.02941,
-    "epssPercentile": 0.85665,
+    "epssPercentile": 0.85738,
     "notes": "https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop_25.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-2783",
     "source": "KEV"
   },
@@ -335,7 +335,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.44231,
-    "epssPercentile": 0.97352,
+    "epssPercentile": 0.97375,
     "notes": "This vulnerability affects a common open-source project, third-party library, or a protocol used by different products. For more information, please see: CISA Mitigation Instructions: https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction ; Additional References: https://github.com/reviewdog/reviewdog/security/advisories/GHSA-qmg3-hpqr-gqvc ; https://nvd.nist.gov/vuln/detail/CVE-2025-30154",
     "source": "KEV"
   },
@@ -386,7 +386,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.6961,
-    "epssPercentile": 0.98539,
+    "epssPercentile": 0.98555,
     "notes": "https://www.edimax.com/edimax/post/post/data/edimax/global/press_releases/4801/ ; https://nvd.nist.gov/vuln/detail/CVE-2025-1316",
     "source": "KEV"
   },
@@ -402,8 +402,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.41711,
-    "epssPercentile": 0.97209,
+    "epssScore": 0.45436,
+    "epssPercentile": 0.97439,
     "notes": "This vulnerability affects a common open-source project, third-party library, or a protocol used by different products. For more information, please see: CISA Mitigation Instructions: https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction ; Additional References: https://github.com/tj-actions/changed-files/blob/45fb12d7a8bedb4da42342e52fe054c6c2c3fd73/README.md?plain=1#L20-L28 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30066",
     "source": "KEV"
   },
@@ -420,7 +420,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.08634,
-    "epssPercentile": 0.9193,
+    "epssPercentile": 0.91986,
     "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-24-535 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24472",
     "source": "KEV"
   },
@@ -437,7 +437,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.01027,
-    "epssPercentile": 0.76066,
+    "epssPercentile": 0.7617,
     "notes": "https://supportportal.juniper.net/s/article/2025-03-Out-of-Cycle-Security-Bulletin-Junos-OS-A-local-attacker-with-shell-access-can-execute-arbitrary-code-CVE-2025-21590?language=en_US ; https://nvd.nist.gov/vuln/detail/CVE-2025-21590",
     "source": "KEV"
   },
@@ -454,7 +454,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.0012,
-    "epssPercentile": 0.32248,
+    "epssPercentile": 0.32386,
     "notes": "https://support.apple.com/en-us/122281 ; https://support.apple.com/en-us/122283 ; https://support.apple.com/en-us/122284 ; https://support.apple.com/en-us/122285 ; ; https://nvd.nist.gov/vuln/detail/CVE-2025-24201",
     "source": "KEV"
   },
@@ -471,7 +471,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.04551,
-    "epssPercentile": 0.88528,
+    "epssPercentile": 0.88598,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24993 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24993",
     "source": "KEV"
   },
@@ -488,7 +488,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.03825,
-    "epssPercentile": 0.87477,
+    "epssPercentile": 0.87547,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24991 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24991",
     "source": "KEV"
   },
@@ -505,7 +505,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.02089,
-    "epssPercentile": 0.83018,
+    "epssPercentile": 0.83098,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24985 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24985",
     "source": "KEV"
   },
@@ -522,7 +522,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.23794,
-    "epssPercentile": 0.95657,
+    "epssPercentile": 0.95691,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24984 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24984",
     "source": "KEV"
   },
@@ -539,7 +539,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.01686,
-    "epssPercentile": 0.8117,
+    "epssPercentile": 0.81258,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24983 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24983",
     "source": "KEV"
   },
@@ -555,8 +555,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.02091,
-    "epssPercentile": 0.8303,
+    "epssScore": 0.0266,
+    "epssPercentile": 0.85006,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-26633 ; https://nvd.nist.gov/vuln/detail/CVE-2025-26633",
     "source": "KEV"
   },
@@ -641,7 +641,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.20968,
-    "epssPercentile": 0.95256,
+    "epssPercentile": 0.95295,
     "notes": "https://advantive.my.site.com/support/s/article/Veracore-Release-Notes-2025-1-1-3 ; https://nvd.nist.gov/vuln/detail/CVE-2025-25181",
     "source": "KEV"
   },
@@ -658,7 +658,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.04717,
-    "epssPercentile": 0.88739,
+    "epssPercentile": 0.88809,
     "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25390 ; https://nvd.nist.gov/vuln/detail/CVE-2025-22226",
     "source": "KEV"
   },
@@ -675,7 +675,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.11344,
-    "epssPercentile": 0.93129,
+    "epssPercentile": 0.93182,
     "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25390 ; https://nvd.nist.gov/vuln/detail/CVE-2025-22225",
     "source": "KEV"
   },
@@ -692,7 +692,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.54753,
-    "epssPercentile": 0.97854,
+    "epssPercentile": 0.97877,
     "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25390 ; https://nvd.nist.gov/vuln/detail/CVE-2025-22224",
     "source": "KEV"
   },
@@ -879,7 +879,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.08012,
-    "epssPercentile": 0.91609,
+    "epssPercentile": 0.91665,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2025-24989 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24989",
     "source": "KEV"
   },
@@ -913,7 +913,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.04202,
-    "epssPercentile": 0.88066,
+    "epssPercentile": 0.88136,
     "notes": "https://github.com/craftcms/cms/security/advisories/GHSA-x684-96hh-833x ; https://nvd.nist.gov/vuln/detail/CVE-2025-23209",
     "source": "KEV"
   },
@@ -981,7 +981,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.30283,
-    "epssPercentile": 0.9638,
+    "epssPercentile": 0.96414,
     "notes": "https://support.apple.com/en-us/122173 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24200",
     "source": "KEV"
   },
@@ -1049,7 +1049,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.07435,
-    "epssPercentile": 0.91234,
+    "epssPercentile": 0.9129,
     "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21418 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21418",
     "source": "KEV"
   },
@@ -1066,7 +1066,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.04322,
-    "epssPercentile": 0.88221,
+    "epssPercentile": 0.88292,
     "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21391 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21391",
     "source": "KEV"
   },
@@ -1083,7 +1083,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.72392,
-    "epssPercentile": 0.98658,
+    "epssPercentile": 0.98673,
     "notes": "https://learn.assetlifecycle.trimble.com/i/1532182-cityworks-customer-communication-2025-02-05-docx/0?; https://www.cisa.gov/news-events/ics-advisories/icsa-25-037-04 ; https://nvd.nist.gov/vuln/detail/CVE-2025-0994",
     "source": "KEV"
   },
@@ -1167,8 +1167,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.33792,
-    "epssPercentile": 0.96678,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "notes": "https://www.7-zip.org/history.txt ; https://nvd.nist.gov/vuln/detail/CVE-2025-0411",
     "source": "KEV"
   },
@@ -1269,8 +1269,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.04587,
-    "epssPercentile": 0.88578,
+    "epssScore": 0.0739,
+    "epssPercentile": 0.91261,
     "notes": "https://support.apple.com/en-us/122066 ; https://support.apple.com/en-us/122068 ; https://support.apple.com/en-us/122071 ; https://support.apple.com/en-us/122072 ; https://support.apple.com/en-us/122073 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24085",
     "source": "KEV"
   },
@@ -1287,7 +1287,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.60256,
-    "epssPercentile": 0.98124,
+    "epssPercentile": 0.98146,
     "notes": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2025-0002 ; https://nvd.nist.gov/vuln/detail/CVE-2025-23006",
     "source": "KEV"
   },
@@ -1338,7 +1338,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.08254,
-    "epssPercentile": 0.91742,
+    "epssPercentile": 0.91801,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-21335 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21335",
     "source": "KEV"
   },
@@ -1355,7 +1355,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.063,
-    "epssPercentile": 0.90391,
+    "epssPercentile": 0.90447,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-21334 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21334",
     "source": "KEV"
   },
@@ -1372,7 +1372,7 @@
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
     "epssScore": 0.40173,
-    "epssPercentile": 0.97122,
+    "epssPercentile": 0.97144,
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-21333 ; https://nvd.nist.gov/vuln/detail/CVE-2025-21333",
     "source": "KEV"
   },
