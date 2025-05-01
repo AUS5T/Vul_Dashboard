@@ -2,70 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KEV Enriched Dashboard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 1rem;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-    input {
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      width: 300px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 0.5rem;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
-      background-color: #eaeaea;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEV Vulnerability Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
 </head>
 <body>
-  <h1>KEV Enriched Vulnerability Dashboard</h1>
+  <div class="header">
+    <h1>Known Exploited Vulnerabilities (KEV)</h1>
+  </div>
 
-  <!-- Search bar -->
-  <input type="text" id="searchInput" placeholder="Search CVE, vendor, product, etc...">
+  <!-- Collapsible Legend -->
+  <details style="margin-bottom: 1em;">
+    <summary><strong>Legend & Guide</strong></summary>
+    <p><strong>CVSS Score:</strong> Common Vulnerability Scoring System rating, numeric severity (v4 → v3 → v2).</p>
+    <p><strong>CVSS Severity:</strong> Descriptive level (e.g., Critical, High).</p>
+    <p><strong>EPSS Score:</strong> Likelihood of exploitation (0.0–1.0).</p>
+    <p><strong>EPSS Percentile:</strong> Rank among vulnerabilities (higher = more likely to be exploited).</p>
+    <p><strong>Vulnerability (hover):</strong> NVD description with tooltip showing <a href="https://www.first.org/cvss/v3.1/specification-document#7-Attack-Vector" target="_blank">attack vector</a>.</p>
+  </details>
 
-  <!-- Data table -->
-  <table>
+  <!-- Table -->
+  <table id="vuln-table" class="display" style="width:100%">
     <thead>
       <tr>
         <th>CVE ID</th>
         <th>Vendor</th>
         <th>Product</th>
         <th>Vulnerability</th>
-        <th>Date Added</th>
-        <th>Due Date</th>
-        <th>Description</th> <!-- NEW COLUMN -->
-        <th>Required Action</th>
-        <th>CVSS Score</th>
+        <th>CVSS Score (Version)</th>
         <th>CVSS Severity</th>
-        <th>CVSS Version</th>
         <th>EPSS Score</th>
         <th>EPSS Percentile</th>
+        <th>Due Date</th>
+        <th>Required Action</th>
       </tr>
     </thead>
-    <tbody id="kev-table-body">
-      <!-- Rows will be injected here by script.js -->
-    </tbody>
+    <tbody></tbody>
   </table>
 
-  <!-- JavaScript -->
+  <!-- JS includes -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
