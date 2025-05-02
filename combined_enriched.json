@@ -1,5 +1,41 @@
 [
   {
+    "cveID": "CVE-2025-34028",
+    "vendor": "Commvault",
+    "product": "Command Center",
+    "vulnerabilityName": "Commvault Command Center Path Traversal Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-05-23",
+    "dateAdded": "2025-05-02",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "cvssVersion": "N/A",
+    "epssScore": 0.04235,
+    "epssPercentile": 0.88186,
+    "description": "N/A",
+    "notes": "https://documentation.commvault.com/securityadvisories/CV_2025_04_1.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-34028",
+    "source": "KEV"
+  },
+  {
+    "cveID": "CVE-2024-58136",
+    "vendor": "Yiiframework",
+    "product": "Yii",
+    "vulnerabilityName": "Yiiframework Yii Improper Protection of Alternate Path Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-05-23",
+    "dateAdded": "2025-05-02",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "cvssVersion": "N/A",
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
+    "description": "N/A",
+    "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. For more information, please see: https://www.yiiframework.com/news/709/please-upgrade-to-yii-2-0-52 ; https://nvd.nist.gov/vuln/detail/CVE-2024-58136",
+    "source": "KEV"
+  },
+  {
     "cveID": "CVE-2024-38475",
     "vendor": "Apache",
     "product": "HTTP Server",
@@ -272,8 +308,8 @@
   {
     "cveID": "CVE-2025-22457",
     "vendor": "Ivanti",
-    "product": "Connect Secure, Policy Secure and ZTA Gateways",
-    "vulnerabilityName": "Ivanti Connect Secure, Policy Secure and ZTA Gateways Stack-Based Buffer Overflow Vulnerability",
+    "product": "Connect Secure, Policy Secure, and ZTA Gateways",
+    "vulnerabilityName": "Ivanti Connect Secure, Policy Secure, and ZTA Gateways Stack-Based Buffer Overflow Vulnerability",
     "requiredAction": "Apply mitigations as set forth in the CISA instructions linked below.",
     "dueDate": "2025-04-11",
     "dateAdded": "2025-04-04",
@@ -284,7 +320,7 @@
     "epssScore": 0.10245,
     "epssPercentile": 0.92764,
     "description": "N/A",
-    "notes": "CISA Mitigation Instructions: https://www.cisa.gov/cisa-mitigation-instructions-cve-2025-22457 ; Additional References: https://forums.ivanti.com/s/article/April-Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-22457) ; https://nvd.nist.gov/vuln/detail/CVE-2025-22457",
+    "notes": "CISA Mitigation Instructions: https://www.cisa.gov/cisa-mitigation-instructions-cve-2025-22457 ; Additional References: https://forums.ivanti.com/s/article/April-Security-Advisory-Ivanti-Connect-Secure-Policy-Secure-ZTA-Gateways-CVE-2025-22457 ; https://nvd.nist.gov/vuln/detail/CVE-2025-22457",
     "source": "KEV"
   },
   {
