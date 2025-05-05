@@ -1,5 +1,23 @@
 [
   {
+    "cveID": "CVE-2025-3248",
+    "vendor": "Langflow",
+    "product": "Langflow",
+    "vulnerabilityName": "Langflow Missing Authentication Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2025-05-26",
+    "dateAdded": "2025-05-05",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "cvssVersion": "N/A",
+    "epssScore": 0.82641,
+    "epssPercentile": 0.99171,
+    "description": "N/A",
+    "notes": "This vulnerability affects a common open-source project, third-party library, or a protocol used by different products. For more information, please see: https://github.com/advisories/GHSA-c995-4fw3-j39m ; https://nvd.nist.gov/vuln/detail/CVE-2025-3248",
+    "source": "KEV"
+  },
+  {
     "cveID": "CVE-2025-34028",
     "vendor": "Commvault",
     "product": "Command Center",
