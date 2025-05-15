@@ -13,7 +13,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.00047,
     "epssPercentile": 0.14295,
-    "description": "SAP NetWeaver Visual Composer Metadata Uploader is vulnerable when a privileged user can upload untrusted or malicious content which, when deserialized, could potentially lead to a compromise of confidentiality, integrity, and availability of the host system.",
+    "description": "N/A",
     "notes": "SAP users must have an account to log in and access the patch: https://me.sap.com/notes/3604119 ; https://nvd.nist.gov/vuln/detail/CVE-2025-42999",
     "source": "KEV"
   },
@@ -49,7 +49,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.00059,
     "epssPercentile": 0.18703,
-    "description": "Insufficient policy enforcement in Loader in Google Chrome prior to 136.0.7103.113 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
+    "description": "N/A",
     "notes": "https://chromereleases.googleblog.com/2025/05/stable-channel-update-for-desktop_14.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-4664",
     "source": "KEV"
   },
@@ -67,7 +67,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.09111,
     "epssPercentile": 0.92211,
-    "description": "A stack-based buffer overflow vulnerability [CWE-121] in Fortinet FortiVoice versions 7.2.0, 7.0.0 through 7.0.6, 6.4.0 through 6.4.10, FortiRecorder versions 7.2.0 through 7.2.3, 7.0.0 through 7.0.5, 6.4.0 through 6.4.5, FortiMail versions 7.6.0 through 7.6.2, 7.4.0 through 7.4.4, 7.2.0 through 7.2.7, 7.0.0 through 7.0.8, FortiNDR versions 7.6.0, 7.4.0 through 7.4.7, 7.2.0 through 7.2.4, 7.0.0 through 7.0.6, FortiCamera versions 2.1.0 through 2.1.3, 2.0 all versions, 1.1 all versions, allows a remote unauthenticated attacker to execute arbitrary code or commands via sending HTTP requests with specially crafted hash cookie.",
+    "description": "N/A",
     "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-25-254 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32756",
     "source": "KEV"
   },
@@ -85,7 +85,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.05327,
     "epssPercentile": 0.89506,
-    "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+    "description": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32709 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32709",
     "source": "KEV"
   },
@@ -103,7 +103,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.11343,
     "epssPercentile": 0.93154,
-    "description": "Access of resource using incompatible type ('type confusion') in Microsoft Scripting Engine allows an unauthorized attacker to execute code over a network.",
+    "description": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-30397 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30397",
     "source": "KEV"
   },
@@ -121,7 +121,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.08932,
     "epssPercentile": 0.92112,
-    "description": "Improper input validation in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
+    "description": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32706 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32706",
     "source": "KEV"
   },
@@ -139,7 +139,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.05327,
     "epssPercentile": 0.89506,
-    "description": "Use after free in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
+    "description": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32701 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32701",
     "source": "KEV"
   },
@@ -157,7 +157,7 @@
     "cvssVersion": "3.1",
     "epssScore": 0.05327,
     "epssPercentile": 0.89506,
-    "description": "Use after free in Windows DWM allows an authorized attacker to elevate privileges locally.",
+    "description": "N/A",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-30400 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30400",
     "source": "KEV"
   },
@@ -169,13 +169,13 @@
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2025-06-02",
     "dateAdded": "2025-05-12",
-    "cvssScore": 4.9,
-    "cvssSeverity": "MEDIUM",
-    "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
-    "cvssVersion": "3.1",
+    "cvssScore": "N/A",
+    "cvssSeverity": "N/A",
+    "cvssVector": "N/A",
+    "cvssVersion": "N/A",
     "epssScore": 0.06869,
     "epssPercentile": 0.90858,
-    "description": "The TeleMessage archiving backend through 2025-05-05 holds cleartext copies of messages from TM SGNL (aka Archive Signal) app users, which is different functionality than described in the TeleMessage \"End-to-End encryption from the mobile phone through to the corporate archive\" documentation, as exploited in the wild in May 2025.",
+    "description": "N/A",
     "notes": "Apply mitigations per vendor instructions. Absent mitigating instructions from the vendor, discontinue use of the product. ; https://nvd.nist.gov/vuln/detail/CVE-2025-47729",
     "source": "KEV"
   },
