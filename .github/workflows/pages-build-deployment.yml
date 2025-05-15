@@ -23,4 +23,7 @@ jobs:
       - name: Upload site output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Use '.' if your HTML files are in root; otherwise use 'dist' or 'build'
+          path: .  # Or update this if your site output is in a subfolder
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
