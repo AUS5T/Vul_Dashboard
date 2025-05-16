@@ -1,7 +1,6 @@
 // == KEV Vulnerability Dashboard Script ==
 // Loads, filters, sorts, and displays enriched CVE data
 
-// === Global Variables and Initial Fetch ===
 let tableData = [];
 let fullData = [];
 let currentPage = 1;
@@ -21,8 +20,6 @@ fetch('kev_enriched.json')
     renderTable();
   });
 
-// === Render Table Function ===
-// Populates the table with current page of filtered/sorted CVE entries
 function renderTable() {
   const tbody = document.querySelector("#kevTable tbody");
   tbody.innerHTML = "";
@@ -35,6 +32,14 @@ function renderTable() {
   pageData.forEach(item => {
     const row = document.createElement("tr");
 
+    const cvssCellContent = item.cvssScore !== "N/A" && item.cvssScore != null
+      ? item.cvssScore
+      : `<a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank" title="View on NVD">N/A</a>`;
+
+    const cvssVersionText = item.cvssVersion && item.cvssVersion !== "N/A"
+      ? `<span class="cvss-version">(${item.cvssVersion})</span>`
+      : '';
+
     row.innerHTML = `
       <td>
         <a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a>
@@ -43,12 +48,7 @@ function renderTable() {
       <td>${item.product || ''}</td>
       <td>${item.cvssSeverity || ''}</td>
       <td title="${item.cvssVector && item.cvssVector !== 'N/A' ? item.cvssVector : ''}">
-        ${item.cvssScore !== "N/A" && item.cvssScore != null
-          ? item.cvssScore
-          : `<a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank" title="View on NVD">N/A</a>`}
-        ${item.cvssVersion && item.cvssVersion !== "N/A"
-          ? `<span class="cvss-version">(${item.cvssVersion})</span>`
-          : ''}
+        ${cvssCellContent} ${cvssVersionText}
       </td>
       <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
       <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
@@ -87,13 +87,11 @@ function renderTable() {
     tbody.appendChild(row);
   });
 
-  // Pagination Controls
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
   document.getElementById("prevPage").disabled = currentPage === 1;
   document.getElementById("nextPage").disabled = currentPage === totalPages;
 }
 
-// === Search Box Filter ===
 document.getElementById("searchBox").addEventListener("input", e => {
   const search = e.target.value.toLowerCase();
   const filtered = fullData.filter(item =>
@@ -105,7 +103,6 @@ document.getElementById("searchBox").addEventListener("input", e => {
   renderTable();
 });
 
-// === Dropdown Filters (Severity and Date) ===
 document.getElementById("severityFilter").addEventListener("change", applyFilters);
 document.getElementById("dateFilter").addEventListener("change", applyFilters);
 document.getElementById("attackVectorFilter").addEventListener("change", applyFilters);
@@ -123,9 +120,8 @@ function applyFilters() {
     if (dateValue) {
       const daysAgo = parseInt(dateValue);
       const itemDate = item.dateAdded ? new Date(item.dateAdded) : null;
-
       if (itemDate && !isNaN(itemDate)) {
-        const cutoff = new Date(now.getTime() - daysAgo * 24 * 60 * 60 * 1000);
+        const cutoff = new Date(now.getTime() - daysAgo * 86400000);
         matchesDate = itemDate >= cutoff;
       } else {
         matchesDate = false;
@@ -136,14 +132,12 @@ function applyFilters() {
     const matchesAV = attackVectorValue ? av === attackVectorValue : true;
 
     return matchesSeverity && matchesDate && matchesAV;
-
   });
 
   currentPage = 1;
   renderTable();
 }
 
-// === Sortable Table Columns ===
 let sortDirections = {};
 
 function sortTable(columnIndex) {
@@ -156,22 +150,18 @@ function sortTable(columnIndex) {
     5: "epssPercentile",
     6: "dateAdded",
     7: "dueDate",
-    // 8 is Required Action (not sortable)
   };
 
   const key = keyMap[columnIndex];
   sortDirections[key] = !sortDirections[key];
   const direction = sortDirections[key] ? 1 : -1;
 
-  // Clear existing sort arrows
   document.querySelectorAll(".sort-indicator").forEach(el => el.textContent = "");
-  const numericOrDate = ["cvssScore", "epssScore", "epssPercentile", "dateAdded", "dueDate"];
-  const arrow = numericOrDate.includes(key)
+  const arrow = ["cvssScore", "epssScore", "epssPercentile", "dateAdded", "dueDate"].includes(key)
     ? (direction === 1 ? "▼" : "▲")
     : (direction === 1 ? "▲" : "▼");
   document.getElementById(`sort-${columnIndex}`).textContent = arrow;
 
-  // Perform sorting
   const sorted = [...tableData].sort((a, b) => {
     const valA = a[key];
     const valB = b[key];
@@ -198,7 +188,6 @@ function sortTable(columnIndex) {
   renderTable();
 }
 
-// === CSV Export ===
 function exportToCSV() {
   const headers = ["CVE ID", "Product", "Severity", "CVSS", "Required Action", "Due Date"];
   const rows = tableData.map(item => [
@@ -216,12 +205,10 @@ function exportToCSV() {
   URL.revokeObjectURL(url);
 }
 
-// === Dark Mode Toggle ===
 document.getElementById("darkModeToggle").addEventListener("change", e => {
   document.body.classList.toggle("dark", e.target.checked);
 });
 
-// === Pagination Controls ===
 document.getElementById("prevPage").addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
@@ -239,7 +226,6 @@ document.getElementById("nextPage").addEventListener("click", () => {
   }
 });
 
-// === Legend Toggle Button ===
 document.getElementById("toggleLegend").addEventListener("click", () => {
   document.getElementById("legendBox").classList.toggle("hidden");
 });
