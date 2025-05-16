@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: GitHub Pages Deployment
 
 on:
   push:
@@ -10,26 +10,29 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
 
-      - name: Build site
-        run: |
-          # If your site needs a build step, put it here.
-          # If not, just leave this step as a placeholder.
-          echo "No build step. Static content ready."
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: .  # Adjust if your built files are in another folder
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v3
+        id: deployment
+        uses: actions/deploy-pages@v4
