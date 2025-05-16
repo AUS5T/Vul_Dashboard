@@ -1,4 +1,4 @@
-name: GitHub Pages (Fixed Workflow)
+name: GitHub Pages (Fixed for Artifact v3 Deprecation)
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # Change this if your site files are in a subfolder like 'dist' or 'docs'
+          path: .  # Adjust if your built files are in another folder
 
   deploy:
     needs: build
