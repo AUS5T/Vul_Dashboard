@@ -43,8 +43,12 @@ function renderTable() {
       <td>${item.product || ''}</td>
       <td>${item.cvssSeverity || ''}</td>
       <td title="${item.cvssVector && item.cvssVector !== 'N/A' ? item.cvssVector : ''}">
-        ${item.cvssScore !== "N/A" && item.cvssScore != null ? item.cvssScore : 'N/A'}
-        ${item.cvssVersion && item.cvssVersion !== "N/A" ? `<span class="cvss-version">(${item.cvssVersion})</span>` : ''}
+        ${item.cvssScore !== "N/A" && item.cvssScore != null
+          ? item.cvssScore
+          : `<a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank" title="View on NVD">N/A</a>`}
+        ${item.cvssVersion && item.cvssVersion !== "N/A"
+          ? `<span class="cvss-version">(${item.cvssVersion})</span>`
+          : ''}
       </td>
       <td>${item.epssScore !== "N/A" && item.epssScore != null ? item.epssScore.toFixed(4) : 'N/A'}</td>
       <td>${item.epssPercentile !== "N/A" && item.epssPercentile != null ? (item.epssPercentile * 100).toFixed(2) + '%' : 'N/A'}</td>
@@ -68,7 +72,6 @@ function renderTable() {
       </td>
     `;
 
-    // Optional expand/collapse logic for long Required Actions
     const actionDiv = row.querySelector('.required-action');
     if (actionDiv && actionDiv.scrollHeight > actionDiv.clientHeight + 5) {
       const toggleLink = document.createElement('span');
@@ -84,19 +87,6 @@ function renderTable() {
     tbody.appendChild(row);
   });
 
-// === Expand/Collapse Required Action ===
-// Toggles the expanded class on the required action div
-function toggleExpand(linkElement) {
-  const actionDiv = linkElement.previousElementSibling;
-  actionDiv.classList.toggle("expanded");
-
-  if (actionDiv.classList.contains("expanded")) {
-    linkElement.textContent = "Show less";
-  } else {
-    linkElement.textContent = "Show more";
-  }
-}
-  
   // Pagination Controls
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
   document.getElementById("prevPage").disabled = currentPage === 1;
