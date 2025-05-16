@@ -285,3 +285,18 @@ body.dark .kev-pill {
 body.dark .sort-indicator {
   color: #ccc;
 }
+
+/* ────────────────────────────────────────────────────────
+Attack Vector Column Styling
+────────────────────────────────────────────────────────── */
+td.attack-vector {
+  font-family: monospace;
+  font-size: 0.85rem;
+  white-space: normal;
+  word-break: break-word;
+  color: #333;
+}
+
+body.dark td.attack-vector {
+  color: #ddd;
+}
