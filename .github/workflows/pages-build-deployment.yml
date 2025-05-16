@@ -1,8 +1,8 @@
-name: GitHub Pages (Fixed for Artifact v3 Deprecation)
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: read
@@ -10,29 +10,26 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload site artifact
+      - name: Build site
+        run: |
+          # If your site needs a build step, put it here.
+          # If not, just leave this step as a placeholder.
+          echo "No build step. Static content ready."
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # Adjust if your built files are in another folder
+          path: .
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
