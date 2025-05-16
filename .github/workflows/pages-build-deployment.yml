@@ -21,9 +21,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload site output
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: .  # Or update this if your site output is in a subfolder
+          path: .  # Make sure this is the folder with index.html, style.css, script.js, etc.
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
