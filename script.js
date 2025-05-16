@@ -57,32 +57,11 @@ function renderTable() {
         ${item.dueDate || ''}
       </td>
       <td>
-        <div class="required-action">
-          ${
-            item.source === "NVD" && item.requiredAction && item.requiredAction.startsWith("http")
-              ? `<a href="${item.requiredAction}" target="_blank" rel="noopener noreferrer">Vendor Advisory</a>`
-              : item.requiredAction || ''
-          }
+        <div class="description-cell">
+          ${item.description || ''}
         </div>
-        ${
-          item.requiredAction && item.requiredAction.length > 100
-            ? '<span class="toggle-link" onclick="toggleExpand(this)">Show more</span>'
-            : ''
-        }
       </td>
     `;
-
-    const actionDiv = row.querySelector('.required-action');
-    if (actionDiv && actionDiv.scrollHeight > actionDiv.clientHeight + 5) {
-      const toggleLink = document.createElement('span');
-      toggleLink.className = 'toggle-link';
-      toggleLink.textContent = 'Show more';
-      toggleLink.addEventListener('click', () => {
-        actionDiv.classList.toggle('expanded');
-        toggleLink.textContent = actionDiv.classList.contains('expanded') ? 'Show less' : 'Show more';
-      });
-      actionDiv.appendChild(toggleLink);
-    }
 
     tbody.appendChild(row);
   });
@@ -189,10 +168,10 @@ function sortTable(columnIndex) {
 }
 
 function exportToCSV() {
-  const headers = ["CVE ID", "Product", "Severity", "CVSS", "Required Action", "Due Date"];
+  const headers = ["CVE ID", "Product", "Severity", "CVSS", "Description", "Due Date"];
   const rows = tableData.map(item => [
     item.cveID, item.product, item.cvssSeverity,
-    item.cvssScore, item.requiredAction, item.dueDate
+    item.cvssScore, item.description, item.dueDate
   ]);
   const csv = [headers, ...rows].map(row => row.join(",")).join("\n");
 
