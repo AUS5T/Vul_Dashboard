@@ -45,7 +45,10 @@ function renderTable() {
         <a href="https://nvd.nist.gov/vuln/detail/${item.cveID}" target="_blank">${item.cveID}</a>
         ${item.source !== "NVD" ? '<span class="kev-pill">KEV</span>' : ''}
       </td>
-      <td>${item.product || ''}</td>
+      <td>
+        ${item.vendor ? `<div class="vendor-name">${item.vendor}</div>` : ''}
+        ${item.product ? `<div class="product-name">${item.product}</div>` : ''}
+      </td>
       <td>${item.cvssSeverity || ''}</td>
       <td title="${item.cvssVector && item.cvssVector !== 'N/A' ? item.cvssVector : ''}">
         ${cvssCellContent} ${cvssVersionText}
