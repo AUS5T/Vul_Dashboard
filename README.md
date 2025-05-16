@@ -1,5 +1,5 @@
 # 🛡️ Vul_Dashboard  
-**KEV Vulnerability Dashboard** — Enriched CISA Feed
+**Known and Exploited Vulnerabilities Dashboard** — Enriched CISA Feed
 
 This dashboard displays the latest [Known Exploited Vulnerabilities (KEV)](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) curated by CISA, enriched with:
 
