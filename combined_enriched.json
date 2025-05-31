@@ -102,7 +102,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.29661,
-    "epssPercentile": 0.96358,
+    "epssPercentile": 0.96355,
     "description": "Remote Code Execution in API component in Ivanti Endpoint Manager Mobile 12.5.0.0 and prior on unspecified platforms allows authenticated attackers to execute arbitrary code via crafted API requests.",
     "notes": "https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM ; https://nvd.nist.gov/vuln/detail/CVE-2025-4428",
     "source": "KEV"
@@ -120,7 +120,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.74905,
-    "epssPercentile": 0.9879,
+    "epssPercentile": 0.98791,
     "description": "An authentication bypass in the API component of Ivanti Endpoint Manager Mobile 12.5.0.0 and prior allows attackers to access protected resources without proper credentials via the API.",
     "notes": "https://forums.ivanti.com/s/article/Security-Advisory-Ivanti-Endpoint-Manager-Mobile-EPMM ; https://nvd.nist.gov/vuln/detail/CVE-2025-4427",
     "source": "KEV"
@@ -138,7 +138,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.14707,
-    "epssPercentile": 0.94116,
+    "epssPercentile": 0.94114,
     "description": "SAP NetWeaver Visual Composer Metadata Uploader is vulnerable when a privileged user can upload untrusted or malicious content which, when deserialized, could potentially lead to a compromise of confidentiality, integrity, and availability of the host system.",
     "notes": "SAP users must have an account to log in and access the patch: https://me.sap.com/notes/3604119 ; https://nvd.nist.gov/vuln/detail/CVE-2025-42999",
     "source": "KEV"
@@ -174,7 +174,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.06304,
-    "epssPercentile": 0.90436,
+    "epssPercentile": 0.90431,
     "description": "Insufficient policy enforcement in Loader in Google Chrome prior to 136.0.7103.113 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
     "notes": "https://chromereleases.googleblog.com/2025/05/stable-channel-update-for-desktop_14.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-4664",
     "source": "KEV"
@@ -192,7 +192,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.08833,
-    "epssPercentile": 0.92065,
+    "epssPercentile": 0.92061,
     "description": "A stack-based buffer overflow vulnerability [CWE-121] in Fortinet FortiVoice versions 7.2.0, 7.0.0 through 7.0.6, 6.4.0 through 6.4.10, FortiRecorder versions 7.2.0 through 7.2.3, 7.0.0 through 7.0.5, 6.4.0 through 6.4.5, FortiMail versions 7.6.0 through 7.6.2, 7.4.0 through 7.4.4, 7.2.0 through 7.2.7, 7.0.0 through 7.0.8, FortiNDR versions 7.6.0, 7.4.0 through 7.4.7, 7.2.0 through 7.2.4, 7.0.0 through 7.0.6, FortiCamera versions 2.1.0 through 2.1.3, 2.0 all versions, 1.1 all versions, allows a remote unauthenticated attacker to execute arbitrary code or commands via sending HTTP requests with specially crafted hash cookie.",
     "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-25-254 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32756",
     "source": "KEV"
@@ -210,7 +210,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.03746,
-    "epssPercentile": 0.87431,
+    "epssPercentile": 0.87428,
     "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32709 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32709",
     "source": "KEV"
@@ -227,8 +227,8 @@
     "cvssSeverity": "HIGH",
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
-    "epssScore": 0.10447,
-    "epssPercentile": 0.92811,
+    "epssScore": 0.10868,
+    "epssPercentile": 0.92995,
     "description": "Access of resource using incompatible type ('type confusion') in Microsoft Scripting Engine allows an unauthorized attacker to execute code over a network.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-30397 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30397",
     "source": "KEV"
@@ -246,7 +246,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.09304,
-    "epssPercentile": 0.9231,
+    "epssPercentile": 0.92306,
     "description": "Improper input validation in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32706 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32706",
     "source": "KEV"
@@ -264,7 +264,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.03712,
-    "epssPercentile": 0.87377,
+    "epssPercentile": 0.87374,
     "description": "Use after free in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-32701 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32701",
     "source": "KEV"
@@ -282,7 +282,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.03712,
-    "epssPercentile": 0.87377,
+    "epssPercentile": 0.87374,
     "description": "Use after free in Windows DWM allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-30400 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30400",
     "source": "KEV"
@@ -300,7 +300,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.08548,
-    "epssPercentile": 0.91912,
+    "epssPercentile": 0.91908,
     "description": "The TeleMessage archiving backend through 2025-05-05 holds cleartext copies of messages from TM SGNL (aka Archive Signal) app users, which is different functionality than described in the TeleMessage \"End-to-End encryption from the mobile phone through to the corporate archive\" documentation, as exploited in the wild in May 2025.",
     "notes": "Apply mitigations per vendor instructions. Absent mitigating instructions from the vendor, discontinue use of the product. ; https://nvd.nist.gov/vuln/detail/CVE-2025-47729",
     "source": "KEV"
@@ -354,7 +354,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.68423,
-    "epssPercentile": 0.9849,
+    "epssPercentile": 0.98492,
     "description": "An out of bounds write exists in FreeType versions 2.13.0 and below (newer versions of FreeType are not vulnerable) when attempting to parse font subglyph structures related to TrueType GX and variable font files. The vulnerable code assigns a signed short value to an unsigned long and then adds a static value causing it to wrap around and allocate too small of a heap buffer. The code then writes up to 6 signed long integers out of bounds relative to this buffer. This may result in arbitrary code execution. This vulnerability may have been exploited in the wild.",
     "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on patching status. For more information, please see: https://source.android.com/docs/security/bulletin/2025-05-01 ; https://nvd.nist.gov/vuln/detail/CVE-2025-27363",
     "source": "KEV"
@@ -497,8 +497,8 @@
     "cvssSeverity": "CRITICAL",
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
-    "epssScore": 0.14873,
-    "epssPercentile": 0.94158,
+    "epssScore": 0.13108,
+    "epssPercentile": 0.93715,
     "description": "Active! mail 6 BuildInfo: 6.60.05008561 and earlier contains a stack-based buffer overflow vulnerability. Receiving a specially crafted request created and sent by a remote unauthenticated attacker may lead to arbitrary code execution and/or a denial-of-service (DoS) condition.",
     "notes": "https://www.qualitia.com/jp/news/2025/04/18_1030.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-42599",
     "source": "KEV"
@@ -516,7 +516,7 @@
     "cvssVector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
     "cvssVersion": "4.0",
     "epssScore": 0.11649,
-    "epssPercentile": 0.93272,
+    "epssPercentile": 0.9327,
     "description": "Commvault Web Server has an unspecified vulnerability that can be exploited by a remote, authenticated attacker. According to the Commvault advisory: \"Webservers can be compromised through bad actors creating and executing webshells.\" Fixed in version 11.36.46, 11.32.89, 11.28.141, and 11.20.217 for Windows and Linux platforms. This vulnerability was added to the CISA Known Exploited Vulnerabilities (KEV) Catalog on 2025-04-28.",
     "notes": "https://documentation.commvault.com/securityadvisories/CV_2025_03_1.html;   https://www.commvault.com/blogs/notice-security-advisory-update;   https://nvd.nist.gov/vuln/detail/CVE-2025-3928      ",
     "source": "KEV"
@@ -533,8 +533,8 @@
     "cvssSeverity": "MEDIUM",
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
     "cvssVersion": "3.1",
-    "epssScore": 0.38929,
-    "epssPercentile": 0.97072,
+    "epssScore": 0.34986,
+    "epssPercentile": 0.96809,
     "description": "External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network.",
     "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-24054 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24054",
     "source": "KEV"
@@ -552,7 +552,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.00243,
-    "epssPercentile": 0.47649,
+    "epssPercentile": 0.4765,
     "description": "This issue was addressed by removing the vulnerable code. This issue is fixed in tvOS 18.4.1, visionOS 2.4.1, iOS iOS 18.4.1 and iPadOS 18.4.1, macOS Sequoia 15.4.1. An attacker with arbitrary read and write capability may be able to bypass Pointer Authentication. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on iOS.",
     "notes": "https://support.apple.com/en-us/122282 ; https://support.apple.com/en-us/122400 ; https://support.apple.com/en-us/122401 ; https://support.apple.com/en-us/122402 ; https://nvd.nist.gov/vuln/detail/CVE-2025-31201",
     "source": "KEV"
@@ -642,7 +642,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.01857,
-    "epssPercentile": 0.82115,
+    "epssPercentile": 0.82119,
     "description": "Use after free in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-29824 ; https://nvd.nist.gov/vuln/detail/CVE-2025-29824",
     "source": "KEV"
@@ -678,7 +678,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.8174,
-    "epssPercentile": 0.99128,
+    "epssPercentile": 0.99129,
     "description": "CrushFTP 10 before 10.8.4 and 11 before 11.3.1 allows authentication bypass and takeover of the crushadmin account (unless a DMZ proxy instance is used), as exploited in the wild in March and April 2025, aka \"Unauthenticated HTTP(S) port access.\" A race condition exists in the AWS4-HMAC (compatible with S3) authorization method of the HTTP component of the FTP server. The server first verifies the existence of the user by performing a call to login_user_pass() with no password requirement. This will authenticate the session through the HMAC verification process and up until the server checks for user verification once more. The vulnerability can be further stabilized, eliminating the need for successfully triggering a race condition, by sending a mangled AWS4-HMAC header. By providing only the username and a following slash (/), the server will successfully find a username, which triggers the successful anypass authentication process, but the server will fail to find the expected SignedHeaders entry, resulting in an index-out-of-bounds error that stops the code from reaching the session cleanup. Together, these issues make it trivial to authenticate as any known or guessable user (e.g., crushadmin), and can lead to a full compromise of the system by obtaining an administrative account.",
     "notes": "https://www.crushftp.com/crush11wiki/Wiki.jsp?page=Update ; https://nvd.nist.gov/vuln/detail/CVE-2025-31161",
     "source": "KEV"
@@ -714,7 +714,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.93709,
-    "epssPercentile": 0.99836,
+    "epssPercentile": 0.99837,
     "description": "Path Equivalence: 'file.Name' (Internal Dot) leading to\u00a0Remote Code Execution and/or Information disclosure\u00a0and/or malicious content added to uploaded files via write enabled\u00a0Default Servlet\u00a0in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.\n\nIf all of the following were true, a malicious user was able to view       security sensitive files and/or inject content into those files:\n-\u00a0writes enabled for the default servlet (disabled by default)\n- support for partial PUT (enabled by default)\n- a target URL for security sensitive uploads that was a sub-directory of\u00a0a target URL for public uploads\n-\u00a0attacker knowledge of the names of security sensitive files being\u00a0uploaded\n-\u00a0the security sensitive files also being uploaded via partial PUT\n\nIf all of the following were true, a malicious user was able to       perform remote code execution:\n- writes enabled for the default servlet (disabled by default)\n-\u00a0support for partial PUT (enabled by default)\n-\u00a0application was using Tomcat's file based session persistence with the\u00a0default storage location\n-\u00a0application included a library that may be leveraged in a\u00a0deserialization attack\n\nUsers are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.",
     "notes": "This vulnerability affects a common open-source component, third-party library, or a protocol used by different products. Please check with specific vendors for information on patching status. For more information, please see: https://lists.apache.org/thread/j5fkjv2k477os90nczf2v9l61fb0kkgq ; https://nvd.nist.gov/vuln/detail/CVE-2025-24813",
     "source": "KEV"
@@ -750,7 +750,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.0679,
-    "epssPercentile": 0.90809,
+    "epssPercentile": 0.90804,
     "description": "Incorrect handle provided in unspecified circumstances in Mojo in Google Chrome on Windows prior to 134.0.6998.177 allowed a remote attacker to perform a sandbox escape via a malicious file. (Chromium security severity: High)",
     "notes": "https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop_25.html ; https://nvd.nist.gov/vuln/detail/CVE-2025-2783",
     "source": "KEV"
@@ -804,7 +804,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.38636,
-    "epssPercentile": 0.97054,
+    "epssPercentile": 0.97055,
     "description": "reviewdog/action-setup is a GitHub action that installs reviewdog. reviewdog/action-setup@v1 was compromised March 11, 2025, between 18:42 and 20:31 UTC, with malicious code added that dumps exposed secrets to Github Actions Workflow Logs. Other reviewdog actions that use `reviewdog/action-setup@v1` that would also be compromised, regardless of version or pinning method, are reviewdog/action-shellcheck, reviewdog/action-composite-template, reviewdog/action-staticcheck, reviewdog/action-ast-grep, and reviewdog/action-typos.",
     "notes": "This vulnerability affects a common open-source project, third-party library, or a protocol used by different products. For more information, please see: CISA Mitigation Instructions: https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction ; Additional References: https://github.com/reviewdog/reviewdog/security/advisories/GHSA-qmg3-hpqr-gqvc ; https://nvd.nist.gov/vuln/detail/CVE-2025-30154",
     "source": "KEV"
@@ -876,7 +876,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.59496,
-    "epssPercentile": 0.98101,
+    "epssPercentile": 0.98102,
     "description": "tj-actions changed-files before 46 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were affected on 2025-03-14 and 2025-03-15 because they were modified by a threat actor to point at commit 0e58ed8, which contained malicious updateFeatures code.)",
     "notes": "This vulnerability affects a common open-source project, third-party library, or a protocol used by different products. For more information, please see: CISA Mitigation Instructions: https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction ; Additional References: https://github.com/tj-actions/changed-files/blob/45fb12d7a8bedb4da42342e52fe054c6c2c3fd73/README.md?plain=1#L20-L28 ; https://nvd.nist.gov/vuln/detail/CVE-2025-30066",
     "source": "KEV"
@@ -894,7 +894,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.09968,
-    "epssPercentile": 0.92612,
+    "epssPercentile": 0.9261,
     "description": "An\u00a0Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS 7.0.0 through 7.0.16 and FortiProxy 7.2.0 through 7.2.12, 7.0.0 through 7.0.19 may allow a remote attacker to gain super-admin privileges via crafted CSF proxy requests.",
     "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-24-535 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24472",
     "source": "KEV"
@@ -930,7 +930,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.00089,
-    "epssPercentile": 0.2659,
+    "epssPercentile": 0.26594,
     "description": "An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in visionOS 2.3.2, iOS 18.3.2 and iPadOS 18.3.2, macOS Sequoia 15.3.2, Safari 18.3.1, watchOS 11.4, iPadOS 17.7.6, iOS 16.7.11 and iPadOS 16.7.11, iOS 15.8.4 and iPadOS 15.8.4. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).",
     "notes": "https://support.apple.com/en-us/122281 ; https://support.apple.com/en-us/122283 ; https://support.apple.com/en-us/122284 ; https://support.apple.com/en-us/122285 ; ; https://nvd.nist.gov/vuln/detail/CVE-2025-24201",
     "source": "KEV"
@@ -948,7 +948,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.0274,
-    "epssPercentile": 0.8525,
+    "epssPercentile": 0.85253,
     "description": "Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24993 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24993",
     "source": "KEV"
@@ -966,7 +966,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.0331,
-    "epssPercentile": 0.86609,
+    "epssPercentile": 0.8661,
     "description": "Out-of-bounds read in Windows NTFS allows an authorized attacker to disclose information locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24991 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24991",
     "source": "KEV"
@@ -983,8 +983,8 @@
     "cvssSeverity": "HIGH",
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
-    "epssScore": 0.01152,
-    "epssPercentile": 0.77459,
+    "epssScore": 0.01375,
+    "epssPercentile": 0.79303,
     "description": "Integer overflow or wraparound in Windows Fast FAT Driver allows an unauthorized attacker to execute code locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24985 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24985",
     "source": "KEV"
@@ -1002,7 +1002,7 @@
     "cvssVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.19784,
-    "epssPercentile": 0.95121,
+    "epssPercentile": 0.95115,
     "description": "Insertion of sensitive information into log file in Windows NTFS allows an unauthorized attacker to disclose information with a physical attack.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24984 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24984",
     "source": "KEV"
@@ -1020,7 +1020,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.01889,
-    "epssPercentile": 0.8226,
+    "epssPercentile": 0.82266,
     "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-24983 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24983",
     "source": "KEV"
@@ -1038,7 +1038,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.06802,
-    "epssPercentile": 0.90813,
+    "epssPercentile": 0.90808,
     "description": "Improper neutralization in Microsoft Management Console allows an unauthorized attacker to bypass a security feature locally.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-26633 ; https://nvd.nist.gov/vuln/detail/CVE-2025-26633",
     "source": "KEV"
@@ -1380,7 +1380,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.08926,
-    "epssPercentile": 0.92116,
+    "epssPercentile": 0.92112,
     "description": "An improper access control vulnerability in Power Pages allows an unauthorized attacker to elevate privileges over a network potentially bypassing the user registration control.\nThis vulnerability has already been mitigated in the service and all affected customers have been notified. This update addressed the registration control bypass. Affected customers have been given instructions on reviewing their sites for potential exploitation and clean up methods. If you've not been notified this vulnerability does not affect you.",
     "notes": "https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2025-24989 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24989",
     "source": "KEV"
@@ -1416,7 +1416,7 @@
     "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.048,
-    "epssPercentile": 0.88934,
+    "epssPercentile": 0.8893,
     "description": "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. This is an remote code execution (RCE) vulnerability that affects Craft 4 and 5 installs where your security key has already been compromised. Anyone running an unpatched version of Craft with a compromised security key is affected. This vulnerability has been patched in Craft 5.5.8 and 4.13.8. Users who cannot update to a patched version, should rotate their security keys and ensure their privacy to help migitgate the issue.",
     "notes": "https://github.com/craftcms/cms/security/advisories/GHSA-x684-96hh-833x ; https://nvd.nist.gov/vuln/detail/CVE-2025-23209",
     "source": "KEV"
@@ -1488,7 +1488,7 @@
     "cvssVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
     "cvssVersion": "3.1",
     "epssScore": 0.31182,
-    "epssPercentile": 0.96499,
+    "epssPercentile": 0.96497,
     "description": "An authorization issue was addressed with improved state management. This issue is fixed in iPadOS 17.7.5, iOS 18.3.1 and iPadOS 18.3.1. A physical attack may disable USB Restricted Mode on a locked device. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",
     "notes": "https://support.apple.com/en-us/122173 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24200",
     "source": "KEV"
@@ -1794,7 +1794,7 @@
     "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
     "cvssVersion": "3.1",
     "epssScore": 0.07783,
-    "epssPercentile": 0.91478,
+    "epssPercentile": 0.91475,
     "description": "A use after free issue was addressed with improved memory management. This issue is fixed in visionOS 2.3, iOS 18.3 and iPadOS 18.3, macOS Sequoia 15.3, watchOS 11.3, tvOS 18.3. A malicious application may be able to elevate privileges. Apple is aware of a report that this issue may have been actively exploited against versions of iOS before iOS 17.2.",
     "notes": "https://support.apple.com/en-us/122066 ; https://support.apple.com/en-us/122068 ; https://support.apple.com/en-us/122071 ; https://support.apple.com/en-us/122072 ; https://support.apple.com/en-us/122073 ; https://nvd.nist.gov/vuln/detail/CVE-2025-24085",
     "source": "KEV"
