@@ -79,7 +79,8 @@ document.getElementById("searchBox").addEventListener("input", e => {
   const search = e.target.value.toLowerCase();
   const filtered = fullData.filter(item =>
     item.cveID.toLowerCase().includes(search) ||
-    (item.product && item.product.toLowerCase().includes(search))
+    (item.product && item.product.toLowerCase().includes(search)) ||
+    (item.vendor && item.vendor.toLowerCase().includes(search))
   );
   tableData = filtered;
   currentPage = 1;
