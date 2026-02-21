@@ -1,0 +1,20 @@
+name: Checkov Scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checkov:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Checkov (GitHub Actions framework)
+        uses: bridgecrewio/checkov-action@v12
+        with:
+          framework: github_actions
+          quiet: false
