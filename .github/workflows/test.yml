@@ -1,5 +1,8 @@
 name: Insecure Test
 
+permissions:
+  contents: read
+
 on:
   push:
 
