@@ -1,5 +1,23 @@
 [
   {
+    "cveID": "CVE-2026-3055",
+    "vendor": "Citrix",
+    "product": "NetScaler",
+    "vulnerabilityName": "Citrix NetScaler Out-of-Bounds Read Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2026-04-02",
+    "dateAdded": "2026-03-30",
+    "cvssScore": 9.3,
+    "cvssSeverity": "CRITICAL",
+    "cvssVector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+    "cvssVersion": "4.0",
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
+    "description": "Insufficient input validation in\u00a0NetScaler ADC and NetScaler Gateway when\u00a0configured as a SAML IDP\u00a0leading to\u00a0memory overread",
+    "notes": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX696300&articleURL=NetScaler_ADC_and_NetScaler_Gateway_Security_Bulletin_for_CVE_2026_3055_and_CVE_2026_4368 ; https://nvd.nist.gov/vuln/detail/CVE-2026-3055",
+    "source": "KEV"
+  },
+  {
     "cveID": "CVE-2025-53521",
     "vendor": "F5",
     "product": "BIG-IP",
