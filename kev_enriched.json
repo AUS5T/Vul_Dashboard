@@ -1,5 +1,23 @@
 [
   {
+    "cveID": "CVE-2026-3502",
+    "vendor": "TrueConf",
+    "product": "Client",
+    "vulnerabilityName": "TrueConf Client Download of Code Without Integrity Check Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2026-04-16",
+    "dateAdded": "2026-04-02",
+    "cvssScore": 7.8,
+    "cvssSeverity": "HIGH",
+    "cvssVector": "CVSS:3.1/AV:A/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:L",
+    "cvssVersion": "3.1",
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
+    "description": "TrueConf Client downloads application update code and applies it without performing verification. An attacker who is able to influence the update delivery path can substitute a tampered update payload. If the payload is executed or installed by the updater, this may result in arbitrary code execution in the context of the updating process or user.",
+    "notes": "https://trueconf.com/blog/update/trueconf-8-5 ; https://trueconf.com/downloads/windows.html ; https://nvd.nist.gov/vuln/detail/CVE-2026-3502",
+    "source": "KEV"
+  },
+  {
     "cveID": "CVE-2026-5281",
     "vendor": "Google",
     "product": "Dawn",
@@ -39,7 +57,7 @@
     "cveID": "CVE-2025-53521",
     "vendor": "F5",
     "product": "BIG-IP",
-    "vulnerabilityName": "F5 BIG-IP Unspecified Vulnerability",
+    "vulnerabilityName": "F5 BIG-IP Stack-Based Buffer Overflow Vulnerability",
     "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
     "dueDate": "2026-03-30",
     "dateAdded": "2026-03-27",
@@ -139,7 +157,7 @@
     "cvssVersion": "3.1",
     "epssScore": "N/A",
     "epssPercentile": "N/A",
-    "description": "A memory corruption issue was addressed with improved lock state checking. This issue is fixed in watchOS 26.1, iOS 18.7.2 and iPadOS 18.7.2, macOS Tahoe 26.1, visionOS 26.1, tvOS 26.1, macOS Sonoma 14.8.2, macOS Sequoia 15.7.2, iOS 26.1 and iPadOS 26.1. A malicious application may cause unexpected changes in memory shared between processes.",
+    "description": "A memory corruption issue was addressed with improved lock state checking. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may cause unexpected changes in memory shared between processes.",
     "notes": "https://support.apple.com/en-us/125632 ; https://support.apple.com/en-us/125633 ; https://support.apple.com/en-us/125634 ; https://support.apple.com/en-us/125635 ; https://support.apple.com/en-us/125636 ; https://support.apple.com/en-us/125637 ; https://support.apple.com/en-us/125638 ; https://support.apple.com/en-us/125639 ; https://nvd.nist.gov/vuln/detail/CVE-2025-43510",
     "source": "KEV"
   },
@@ -157,7 +175,7 @@
     "cvssVersion": "3.1",
     "epssScore": "N/A",
     "epssPercentile": "N/A",
-    "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in watchOS 26.1, iOS 18.7.2 and iPadOS 18.7.2, macOS Tahoe 26.1, visionOS 26.1, tvOS 26.1, macOS Sonoma 14.8.2, macOS Sequoia 15.7.2, iOS 26.1 and iPadOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
+    "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.2 and iPadOS 18.7.2, iOS 26.1 and iPadOS 26.1, macOS Sequoia 15.7.2, macOS Sonoma 14.8.2, macOS Tahoe 26.1, tvOS 26.1, visionOS 26.1, watchOS 26.1. A malicious application may be able to cause unexpected system termination or write kernel memory.",
     "notes": "https://support.apple.com/en-us/125632 ; https://support.apple.com/en-us/125633 ; https://support.apple.com/en-us/125634 ; https://support.apple.com/en-us/125635 ; https://support.apple.com/en-us/125636 ; https://support.apple.com/en-us/125637 ; https://support.apple.com/en-us/125638 ; https://support.apple.com/en-us/125639 ; https://nvd.nist.gov/vuln/detail/CVE-2025-43520",
     "source": "KEV"
   },
@@ -175,7 +193,7 @@
     "cvssVersion": "3.1",
     "epssScore": "N/A",
     "epssPercentile": "N/A",
-    "description": "The issue was addressed with improved memory handling. This issue is fixed in Safari 18.6, watchOS 11.6, visionOS 2.6, iOS 18.6 and iPadOS 18.6, macOS Sequoia 15.6, tvOS 18.6. Processing maliciously crafted web content may lead to memory corruption.",
+    "description": "The issue was addressed with improved memory handling. This issue is fixed in Safari 18.6, iOS 18.6 and iPadOS 18.6, macOS Sequoia 15.6, tvOS 18.6, visionOS 2.6, watchOS 11.6. Processing maliciously crafted web content may lead to memory corruption.",
     "notes": "https://support.apple.com/en-us/124147 ; https://support.apple.com/en-us/124149 ; https://support.apple.com/en-us/124152 ; https://support.apple.com/en-us/124153 ; https://support.apple.com/en-us/124155 ; https://nvd.nist.gov/vuln/detail/CVE-2025-31277",
     "source": "KEV"
   },
@@ -1453,7 +1471,7 @@
     "cvssVersion": "3.1",
     "epssScore": "N/A",
     "epssPercentile": "N/A",
-    "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in watchOS 26.2, Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, visionOS 26.2, tvOS 26.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 was also issued in response to this report.",
+    "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 26.2, iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2, macOS Tahoe 26.2, tvOS 26.2, visionOS 26.2, watchOS 26.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 26. CVE-2025-14174 was also issued in response to this report.",
     "notes": "https://support.apple.com/en-us/125884 ; https://support.apple.com/en-us/125892 ; https://support.apple.com/en-us/125885 ; https://support.apple.com/en-us/125886 ; https://support.apple.com/en-us/125889 ; https://nvd.nist.gov/vuln/detail/CVE-2025-43529",
     "source": "KEV"
   },
