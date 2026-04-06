@@ -220,3 +220,14 @@ document.getElementById("nextPage").addEventListener("click", () => {
 document.getElementById("toggleLegend").addEventListener("click", () => {
   document.getElementById("legendBox").classList.toggle("hidden");
 });
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("toggle-link")) {
+    const content = e.target.previousElementSibling;
+
+    content.classList.toggle("expanded");
+    e.target.textContent = content.classList.contains("expanded")
+      ? "Show less"
+      : "Show more";
+  }
+});
