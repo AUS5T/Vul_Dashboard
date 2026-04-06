@@ -69,7 +69,10 @@ function renderTable() {
       
       <td>
         <div class="description-cell">
-          ${item.description || ''}
+          <div class="desc-content">
+            ${item.description || ''}
+          </div>
+          <span class="toggle-link">Show more</span>
         </div>
       </td>
     `;
