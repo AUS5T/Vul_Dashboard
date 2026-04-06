@@ -320,6 +320,15 @@ td.attack-vector {
   color: #333;
 }
 
+.desc-content {
+  max-height: 3em;
+  overflow: hidden;
+}
+
+.desc-content.expanded {
+  max-height: none;
+}
+
 .attack-content {
   max-height: 2.5em;
   overflow: hidden;
