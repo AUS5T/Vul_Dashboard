@@ -1,5 +1,23 @@
 [
   {
+    "cveID": "CVE-2026-35616",
+    "vendor": "Fortinet",
+    "product": "FortiClient EMS",
+    "vulnerabilityName": "Fortinet FortiClient EMS Improper Access Control Vulnerability",
+    "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+    "dueDate": "2026-04-09",
+    "dateAdded": "2026-04-06",
+    "cvssScore": 9.8,
+    "cvssSeverity": "CRITICAL",
+    "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvssVersion": "3.1",
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
+    "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+    "notes": "Please adhere to Fortinet's guidelines to assess exposure and mitigate risks. Check for signs of potential compromise on all internet accessible Fortinet products affected by this vulnerability. Apply any final mitigations provided by the vendor as soon as they become available. For more information please see: https://fortiguard.fortinet.com/psirt/FG-IR-26-099 ; https://nvd.nist.gov/vuln/detail/CVE-2026-35616",
+    "source": "KEV"
+  },
+  {
     "cveID": "CVE-2026-3502",
     "vendor": "TrueConf",
     "product": "Client",
