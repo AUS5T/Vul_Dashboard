@@ -90,7 +90,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--table-bg);
-  table-layout: fixed;
+  table-layout: auto;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 th, td {
@@ -100,6 +104,12 @@ th, td {
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
+}
+
+#kevTable th:nth-child(1),
+#kevTable td:nth-child(1) {
+  min-width: 120px;
+  white-space: nowrap;
 }
 
 th {
