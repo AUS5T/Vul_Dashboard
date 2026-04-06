@@ -59,7 +59,14 @@ function renderTable() {
       <td class="${item.dueDate && new Date(item.dueDate) < new Date() ? 'overdue' : ''}">
         ${item.dueDate || ''}
       </td>
-      <td>${item.cvssVector && item.cvssVector !== "N/A" ? item.cvssVector : 'N/A'}</td>
+      
+      <td>
+        <div class="attack-content">
+          ${item.cvssVector && item.cvssVector !== "N/A" ? item.cvssVector : 'N/A'}
+        </div>
+        <span class="toggle-link">Show more</span>
+      </td>
+      
       <td>
         <div class="description-cell">
           ${item.description || ''}
