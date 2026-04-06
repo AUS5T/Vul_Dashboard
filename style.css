@@ -320,6 +320,11 @@ td.attack-vector {
   color: #333;
 }
 
+#kevTable th:nth-child(9),
+#kevTable td:nth-child(9) {
+  min-width: 85px;
+}
+
 .desc-content {
   max-height: 3em;
   overflow: hidden;
