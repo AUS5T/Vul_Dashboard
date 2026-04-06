@@ -60,7 +60,7 @@ function renderTable() {
         ${item.dueDate || ''}
       </td>
       
-      <td>
+      <td class="attack-vector">
         <div class="attack-content">
           ${item.cvssVector && item.cvssVector !== "N/A" ? item.cvssVector : 'N/A'}
         </div>
