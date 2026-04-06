@@ -108,9 +108,10 @@ th, td {
 
 #kevTable th:nth-child(1),
 #kevTable td:nth-child(1) {
-  min-width: 90px;
-  max-width: 120px;
-  white-space: nowrap;
+  min-width: 70px;
+  max-width: 100px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 #kevTable th:nth-child(9),
