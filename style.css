@@ -319,6 +319,15 @@ td.attack-vector {
   color: #333;
 }
 
+.attack-content {
+  max-height: 2.5em;
+  overflow: hidden;
+}
+
+.attack-content.expanded {
+  max-height: none;
+}
+
 body.dark td.attack-vector {
   color: #ddd;
 }
