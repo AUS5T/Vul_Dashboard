@@ -64,7 +64,9 @@ function renderTable() {
         <div class="attack-content">
           ${item.cvssVector && item.cvssVector !== "N/A" ? item.cvssVector : 'N/A'}
         </div>
-        ${item.cvssVector && item.cvssVector.length > 20 ? '<span class="toggle-link">Show more</span>' : ''}
+        ${item.cvssVector && item.cvssVector !== "N/A" && item.cvssVector.length > 20
+          ? '<span class="toggle-link">Show more</span>'
+          : ''}
       </td>
       
       <td>
@@ -72,7 +74,9 @@ function renderTable() {
           <div class="desc-content">
             ${item.description || ''}
           </div>
-          ${item.description && item.description.length > 120 ? '<span class="toggle-link">Show more</span>' : ''}
+          ${item.description && item.description.length > 120
+            ? '<span class="toggle-link">Show more</span>'
+            : ''}
         </div>
       </td>
 
