@@ -14,7 +14,7 @@
     "epssScore": "N/A",
     "epssPercentile": "N/A",
     "description": "A vulnerability in the API of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to overwrite arbitrary files on the local file system. To exploit this vulnerability, the attacker must have valid read-only credentials with API access on the affected system.\r\n\r\nThis vulnerability is due to improper file handling on the API interface of an affected system. An attacker could exploit this vulnerability by uploading a malicious file on the local file system. A successful exploit could allow the attacker to overwrite arbitrary files on the affected system&nbsp;and gain vmanage user privileges.",
-    "notes": "CISA Mitigation Instructions: https://www.cisa.gov/news-events/directives/ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems ; https://www.cisa.gov/news-events/directives/supplemental-direction-ed-26-03-hunt-and-hardening-guidance-cisco-sd-wan-systems ; https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-authbp-qwCX8D4v ; https://nvd.nist.gov/vuln/detail/ CVE-2026-20122",
+    "notes": "CISA Mitigation Instructions: https://www.cisa.gov/news-events/directives/ed-26-03-mitigate-vulnerabilities-cisco-sd-wan-systems ; https://www.cisa.gov/news-events/directives/supplemental-direction-ed-26-03-hunt-and-hardening-guidance-cisco-sd-wan-systems ; https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-authbp-qwCX8D4v ; https://nvd.nist.gov/vuln/detail/CVE-2026-20122",
     "source": "KEV"
   },
   {
@@ -140,7 +140,7 @@
     "epssScore": "N/A",
     "epssPercentile": "N/A",
     "description": "In JetBrains TeamCity before 2023.11.4 path traversal allowing to perform limited admin actions  was possible",
-    "notes": "https://www.jetbrains.com/privacy-security/issues-fixed/ ; https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
+    "notes": "https://www.jetbrains.com/privacy-security/issues-fixed/ ; https://blog.jetbrains.com/teamcity/2024/03/additional-critical-security-issues-affecting-teamcity-on-premises-cve-2024-27198-and-cve-2024-27199-update-to-2023-11-4-now/ ; https://nvd.nist.gov/vuln/detail/CVE-2024-27199",
     "source": "KEV"
   },
   {
@@ -479,8 +479,8 @@
     "cvssSeverity": "CRITICAL",
     "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
     "cvssVersion": "3.1",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.88366,
+    "epssPercentile": 0.99501,
     "description": "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. Starting from version 3.0.0-RC1 to before 3.9.15, 4.0.0-RC1 to before 4.14.15, and 5.0.0-RC1 to before 5.6.17, Craft is vulnerable to remote code execution. This is a high-impact, low-complexity attack vector. This issue has been patched in versions 3.9.15, 4.14.15, and 5.6.17, and is an additional fix for CVE-2023-41892.",
     "notes": "https://craftcms.com/knowledge-base/craft-cms-cve-2025-32432 ; https://github.com/craftcms/cms/security/advisories/GHSA-f3gw-9ww9-jmc3 ; https://nvd.nist.gov/vuln/detail/CVE-2025-32432",
     "source": "KEV"
@@ -2819,8 +2819,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.06011,
-    "epssPercentile": 0.90721,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://docs.libraesva.com/knowledgebase/security-advisory-command-injection-vulnerability-cve-2025-59689/ ; https://nvd.nist.gov/vuln/detail/CVE-2025-59689",
     "source": "KEV"
@@ -2837,8 +2837,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.49565,
+    "epssPercentile": 0.97807,
     "description": "N/A",
     "notes": "https://www.fortra.com/security/advisories/product-security/fi-2025-012 ; https://nvd.nist.gov/vuln/detail/CVE-2025-10035",
     "source": "KEV"
@@ -6005,8 +6005,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.31531,
-    "epssPercentile": 0.96797,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://www.beyondtrust.com/trust-center/security-advisories/bt24-11 ; https://nvd.nist.gov/vuln/detail/CVE-2024-12686",
     "source": "KEV"
@@ -8381,8 +8381,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.00359,
-    "epssPercentile": 0.58085,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://chromereleases.googleblog.com/2024/05/stable-channel-update-for-desktop_15.html; https://nvd.nist.gov/vuln/detail/CVE-2024-4947",
     "source": "KEV"
@@ -8798,7 +8798,7 @@
     "epssScore": "N/A",
     "epssPercentile": "N/A",
     "description": "N/A",
-    "notes": "https://www.jetbrains.com/help/teamcity/teamcity-2023-11-4-release-notes.html; https://nvd.nist.gov/vuln/detail/CVE-2024-27198",
+    "notes": "https://www.jetbrains.com/help/teamcity/teamcity-2023-11-4-release-notes.html; https://blog.jetbrains.com/teamcity/2024/03/additional-critical-security-issues-affecting-teamcity-on-premises-cve-2024-27198-and-cve-2024-27199-update-to-2023-11-4-now/ ; https://nvd.nist.gov/vuln/detail/CVE-2024-27198",
     "source": "KEV"
   },
   {
@@ -10811,8 +10811,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.00118,
+    "epssPercentile": 0.30599,
     "description": "N/A",
     "notes": "https://support.apple.com/en-us/HT213841, https://support.apple.com/en-us/HT213842, https://support.apple.com/en-us/HT213843,https://support.apple.com/en-us/HT213844,https://support.apple.com/en-us/HT213845,https://support.apple.com/en-us/HT213846,https://support.apple.com/en-us/HT213848 ;  https://nvd.nist.gov/vuln/detail/CVE-2023-38606",
     "source": "KEV"
@@ -12521,8 +12521,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.04045,
+    "epssPercentile": 0.88517,
     "description": "N/A",
     "notes": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-22-0007;  https://nvd.nist.gov/vuln/detail/CVE-2022-40765",
     "source": "KEV"
@@ -12755,8 +12755,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.94457,
-    "epssPercentile": 0.99993,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://control-webpanel.com/changelog#1669855527714-450fb335-6194;  https://nvd.nist.gov/vuln/detail/CVE-2022-44877",
     "source": "KEV"
@@ -16085,8 +16085,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.27734,
+    "epssPercentile": 0.96463,
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2016-3298",
     "source": "KEV"
@@ -17147,8 +17147,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.03626,
-    "epssPercentile": 0.87832,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2014-9163",
     "source": "KEV"
@@ -17741,8 +17741,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.92691,
+    "epssPercentile": 0.99753,
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2017-0213",
     "source": "KEV"
@@ -17957,8 +17957,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.8953,
-    "epssPercentile": 0.99558,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2013-2729",
     "source": "KEV"
@@ -19775,8 +19775,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.90107,
+    "epssPercentile": 0.99589,
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2009-3960",
     "source": "KEV"
@@ -22997,8 +22997,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.17515,
-    "epssPercentile": 0.95093,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2020-17463",
     "source": "KEV"
@@ -24185,8 +24185,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": "N/A",
-    "epssPercentile": "N/A",
+    "epssScore": 0.94101,
+    "epssPercentile": 0.99908,
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-42258",
     "source": "KEV"
@@ -27767,8 +27767,8 @@
     "cvssSeverity": "N/A",
     "cvssVector": "N/A",
     "cvssVersion": "N/A",
-    "epssScore": 0.07629,
-    "epssPercentile": 0.91889,
+    "epssScore": "N/A",
+    "epssPercentile": "N/A",
     "description": "N/A",
     "notes": "https://nvd.nist.gov/vuln/detail/CVE-2019-18988",
     "source": "KEV"
