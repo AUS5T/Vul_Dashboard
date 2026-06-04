@@ -12,7 +12,7 @@ function getAttackVector(cvssVector) {
   return match ? match[1] : null;
 }
 
-fetch('kev_enriched.json')
+fetch('https://raw.githubusercontent.com/AUS5T/Vul_Dashboard/main/kev_enriched.json')
   .then(res => res.json())
   .then(data => {
     fullData = data;
